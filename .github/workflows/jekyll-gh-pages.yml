@@ -29,17 +29,19 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler-cache: true
+          working-directory: docs
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Build with Jekyll
-        run: |
-          bundle install
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+      - name: Install dependencies
+        run: bundle install
+      
+      - name: Build site
         env:
           JEKYLL_ENV: production
-          
+        run: bundle exec jekyll build
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
