@@ -1,0 +1,19 @@
+current directory: /Users/TomMavis/Trailhead/Recon/Documentation/RA-docs/RA-docs/docs/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/TomMavis/.rbenv/versions/3.2.0/bin/ruby -I /Users/TomMavis/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /Users/TomMavis/Trailhead/Recon/Documentation/RA-docs/RA-docs/docs/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241030-88717-8nkz6r sitelibdir\=./.gem.20241030-88717-8nkz6r clean
+
+current directory: /Users/TomMavis/Trailhead/Recon/Documentation/RA-docs/RA-docs/docs/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241030-88717-8nkz6r sitelibdir\=./.gem.20241030-88717-8nkz6r
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/TomMavis/Trailhead/Recon/Documentation/RA-docs/RA-docs/docs/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241030-88717-8nkz6r sitelibdir\=./.gem.20241030-88717-8nkz6r install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20241030-88717-8nkz6r/racc
+
+current directory: /Users/TomMavis/Trailhead/Recon/Documentation/RA-docs/RA-docs/docs/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241030-88717-8nkz6r sitelibdir\=./.gem.20241030-88717-8nkz6r clean

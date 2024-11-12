@@ -1,0 +1,539 @@
+layout: table_wrappers
+---
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+
+  <style id="jtd-nav-activation">
+  
+
+.site-nav > ul.nav-list:first-child > li:not(:nth-child(5)) > a,
+.site-nav > ul.nav-list:first-child > li > ul > li > a,
+.site-nav > ul.nav-list:first-child > li > ul > li > ul > li > a {
+  background-image: none;
+}
+
+.site-nav > ul.nav-list:not(:first-child) a,
+.site-nav li.external a {
+  background-image: none;
+}
+
+.site-nav > ul.nav-list:first-child > li:nth-child(5) > a {
+  font-weight: 600;
+  text-decoration: none;
+}.site-nav > ul.nav-list:first-child > li:nth-child(5) > button svg {
+  transform: rotate(-90deg);
+}.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(5) > ul.nav-list {
+  display: block;
+}
+  </style>
+
+  
+
+  
+    <script src="/assets/js/vendor/lunr.min.js"></script>
+  
+
+  <script src="/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Activity Rules System | ReconMMS Documentation</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Activity Rules System" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Documentation for the Recon Matter Management System" />
+<meta property="og:description" content="Documentation for the Recon Matter Management System" />
+<link rel="canonical" href="http://localhost:4000/pages/activity-rules.html" />
+<meta property="og:url" content="http://localhost:4000/pages/activity-rules.html" />
+<meta property="og:site_name" content="ReconMMS Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Activity Rules System" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Documentation for the Recon Matter Management System","headline":"Activity Rules System","url":"http://localhost:4000/pages/activity-rules.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+</head>
+
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+    <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  
+  
+    <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+  
+</svg>
+
+  <div class="side-bar">
+  <div class="site-header" role="banner">
+    <a href="/" class="site-title lh-tight">
+  ReconMMS Documentation
+
+</a>
+    <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+    </button>
+  </div>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+  
+  
+    <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Object Reference category" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/pages/object-reference.html" class="nav-list-link">Object Reference</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Objects category" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><a href="/pages/objects/" class="nav-list-link">Objects</a><ul class="nav-list"><li class="nav-list-item">
+                <a href="/pages/objects/activity-rule.html" class="nav-list-link">Activity Rule</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/matter.html" class="nav-list-link">Matter</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/matter-contact.html" class="nav-list-link">Matter Contact</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/matter-account.html" class="nav-list-link">Matter Account</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/matter-note.html" class="nav-list-link">Matter Note</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/related-matter.html" class="nav-list-link">Related Matter</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/stage-activity.html" class="nav-list-link">Stage Activity</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/work-group.html" class="nav-list-link">Work Group</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/evidence.html" class="nav-list-link">Evidence</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/evidence-contact.html" class="nav-list-link">Evidence Contact</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/investigation.html" class="nav-list-link">Investigation</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/investigation-account.html" class="nav-list-link">Investigation Account</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/investigation-contact.html" class="nav-list-link">Investigation Contact</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/city.html" class="nav-list-link">City</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/county.html" class="nav-list-link">County</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/district.html" class="nav-list-link">District</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/state.html" class="nav-list-link">State</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/docket-rule.html" class="nav-list-link">Docket Rule</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/request.html" class="nav-list-link">Request</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/statute.html" class="nav-list-link">Statute</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/workflow.html" class="nav-list-link">Workflow</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/workflow-template.html" class="nav-list-link">Workflow Template</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/workflow-record-type.html" class="nav-list-link">Workflow Record Type</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/remedy.html" class="nav-list-link">Remedy</a>
+              </li><li class="nav-list-item">
+                <a href="/pages/objects/recon-user.html" class="nav-list-link">Recon User (Contact)</a>
+              </li></ul></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Object Relationships category" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/pages/relationships/" class="nav-list-link">Object Relationships</a><ul class="nav-list"><li class="nav-list-item"><a href="/pages/relationships/matter-relationships.html" class="nav-list-link">Matter Relationships</a></li><li class="nav-list-item"><a href="/pages/relationships/invesigation-relationships.html" class="nav-list-link">Investigation Relationships</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in Configuration Guide category" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+    </button><a href="/pages/configuration/" class="nav-list-link">Configuration Guide</a><ul class="nav-list"><li class="nav-list-item"><a href="/pages/configuration/salesforce-basics.html" class="nav-list-link">Salesforce Basics</a></li><li class="nav-list-item"><a href="/pages/configuration/matter-management.html" class="nav-list-link">Legal Matter Management</a></li><li class="nav-list-item"><a href="/pages/configuration/recon-setup.html" class="nav-list-link">ReconMMS Setup</a></li></ul></li><li class="nav-list-item"><a href="/pages/activity-rules.html" class="nav-list-link">Activity Rules System</a></li><li class="nav-list-item"><a href="/pages/getting-started.html" class="nav-list-link">Getting Started</a></li><li class="nav-list-item"><a href="/pages/workflow-engine.html" class="nav-list-link">Workflow System</a></li></ul>
+
+  
+</nav>
+
+
+  
+  
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  
+</div>
+
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+  
+    
+
+<div class="search" role="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search ReconMMS Documentation" aria-label="Search ReconMMS Documentation" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+  
+  
+  
+    <nav aria-label="Auxiliary" class="aux-nav">
+  <ul class="aux-nav-list">
+    
+      <li class="aux-nav-list-item">
+        <a href="https://github.com/StaggerLee9/RA-docs" class="site-button"
+          
+        >
+          View on GitHub
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+  
+</div>
+
+    <div class="main-content-wrap">
+      
+      <div id="main-content" class="main-content">
+        <main>
+          <h1 id="recon-matter-management-system---activity-rules-system">Recon Matter Management System - Activity Rules System</h1>
+
+<p class="fs-9 fs-6 fw-300">Activity Rules System Documentation</p>
+
+<p><a href="https://github.com/StaggerLee9/RA-docs" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2">View on GitHub</a></p>
+
+<hr />
+
+<h2 class="no_toc" id="table-of-contents">Table of Contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#recon-matter-management-system---activity-rules-system" id="markdown-toc-recon-matter-management-system---activity-rules-system">Recon Matter Management System - Activity Rules System</a>    <ol>
+      <li><a href="#executive-summary" id="markdown-toc-executive-summary">Executive Summary</a></li>
+      <li><a href="#sample-use-cases" id="markdown-toc-sample-use-cases">Sample Use Cases</a>        <ol>
+          <li><a href="#use-case-1-automating-task-creation-upon-new-matter-intake" id="markdown-toc-use-case-1-automating-task-creation-upon-new-matter-intake">Use Case 1: Automating Task Creation Upon New Matter Intake</a></li>
+          <li><a href="#use-case-2-scheduling-follow-up-dates-based-on-regulatory-deadlines" id="markdown-toc-use-case-2-scheduling-follow-up-dates-based-on-regulatory-deadlines">Use Case 2: Scheduling Follow-Up Dates Based on Regulatory Deadlines</a></li>
+          <li><a href="#use-case-3-clean-up-and-compliance-tracking-for-deleted-events" id="markdown-toc-use-case-3-clean-up-and-compliance-tracking-for-deleted-events">Use Case 3: Clean-Up and Compliance Tracking for Deleted Events</a></li>
+        </ol>
+      </li>
+      <li><a href="#flow-reference" id="markdown-toc-flow-reference">Flow Reference</a>        <ol>
+          <li><a href="#core-flows" id="markdown-toc-core-flows">Core Flows</a>            <ol>
+              <li><a href="#activity-rule---before-save---v1" id="markdown-toc-activity-rule---before-save---v1">Activity Rule - Before Save - V1</a></li>
+              <li><a href="#activity-rules---event-after-save" id="markdown-toc-activity-rules---event-after-save">Activity Rules - Event After Save</a></li>
+            </ol>
+          </li>
+          <li><a href="#subflows" id="markdown-toc-subflows">Subflows</a>            <ol>
+              <li><a href="#activity-rules---event-and-task-after-save-subflow" id="markdown-toc-activity-rules---event-and-task-after-save-subflow">Activity Rules - Event and Task After Save Subflow</a></li>
+              <li><a href="#activity-rules---start" id="markdown-toc-activity-rules---start">Activity Rules - Start</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#technical-specifications" id="markdown-toc-technical-specifications">Technical Specifications</a>        <ol>
+          <li><a href="#system-requirements" id="markdown-toc-system-requirements">System Requirements</a></li>
+          <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a></li>
+        </ol>
+      </li>
+      <li><a href="#complete-flow-reference" id="markdown-toc-complete-flow-reference">Complete Flow Reference</a>        <ol>
+          <li><a href="#core-flows-1" id="markdown-toc-core-flows-1">Core Flows</a>            <ol>
+              <li><a href="#activity-rule---before-save---v1-1" id="markdown-toc-activity-rule---before-save---v1-1">Activity Rule - Before Save - V1</a></li>
+              <li><a href="#activity-rules---event-after-save-1" id="markdown-toc-activity-rules---event-after-save-1">Activity Rules - Event After Save</a></li>
+              <li><a href="#activity-rules---event-and-task-after-save-subflow-1" id="markdown-toc-activity-rules---event-and-task-after-save-subflow-1">Activity Rules - Event and Task After Save Subflow</a></li>
+              <li><a href="#activity-rules---start-1" id="markdown-toc-activity-rules---start-1">Activity Rules - Start</a></li>
+              <li><a href="#activity-rules---create-child-activity-records" id="markdown-toc-activity-rules---create-child-activity-records">Activity Rules - Create Child Activity Records</a></li>
+              <li><a href="#activity-rules---create-activity-rule-jobs" id="markdown-toc-activity-rules---create-activity-rule-jobs">Activity Rules - Create Activity Rule Jobs</a></li>
+              <li><a href="#activity-rules---run-activity-rule-jobs" id="markdown-toc-activity-rules---run-activity-rule-jobs">Activity Rules - Run Activity Rule Jobs</a></li>
+              <li><a href="#activity-rules---event-on-delete" id="markdown-toc-activity-rules---event-on-delete">Activity Rules - Event On Delete</a></li>
+            </ol>
+          </li>
+          <li><a href="#subflow-reference" id="markdown-toc-subflow-reference">Subflow Reference</a>            <ol>
+              <li><a href="#activity-rules---event-and-task-after-save-subflow-2" id="markdown-toc-activity-rules---event-and-task-after-save-subflow-2">Activity Rules - Event and Task After Save Subflow</a></li>
+              <li><a href="#activity-rules---start-2" id="markdown-toc-activity-rules---start-2">Activity Rules - Start</a></li>
+              <li><a href="#activity-rules---get-matter-contacts" id="markdown-toc-activity-rules---get-matter-contacts">Activity Rules - Get Matter Contacts</a></li>
+              <li><a href="#activity-rules---set-primary-assignment" id="markdown-toc-activity-rules---set-primary-assignment">Activity Rules - Set Primary Assignment</a></li>
+              <li><a href="#activity-rules---get-non-primary-assignments" id="markdown-toc-activity-rules---get-non-primary-assignments">Activity Rules - Get Non-Primary Assignments</a></li>
+              <li><a href="#activity-rules---eventrelations" id="markdown-toc-activity-rules---eventrelations">Activity Rules - EventRelations</a></li>
+              <li><a href="#activity-rules---create-child-activity-records-1" id="markdown-toc-activity-rules---create-child-activity-records-1">Activity Rules - Create Child Activity Records</a></li>
+              <li><a href="#activity-rules---create-child-tasks-no-sharedactivities" id="markdown-toc-activity-rules---create-child-tasks-no-sharedactivities">Activity Rules - Create Child Tasks-No SharedActivities</a></li>
+              <li><a href="#activity-rules---create-activity-rule-jobs-1" id="markdown-toc-activity-rules---create-activity-rule-jobs-1">Activity Rules - Create Activity Rule Jobs</a></li>
+              <li><a href="#activity-rules---calculate-child-date" id="markdown-toc-activity-rules---calculate-child-date">Activity Rules - Calculate Child Date</a></li>
+              <li><a href="#activity-rules---get-assignment-ids" id="markdown-toc-activity-rules---get-assignment-ids">Activity Rules - Get Assignment IDs</a></li>
+              <li><a href="#activity-rules---error-log---v5" id="markdown-toc-activity-rules---error-log---v5">Activity Rules - Error Log - V5</a></li>
+              <li><a href="#activity-rules---updated-parent-record---v8" id="markdown-toc-activity-rules---updated-parent-record---v8">Activity Rules - Updated Parent Record - V8</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="executive-summary">Executive Summary</h2>
+
+<p>The Recon Matter Management System (ReconMMS) is a Salesforce-based platform designed to support legal professionals in managing legal matters efficiently and effectively. The system includes the Activity Rules System, a set of flows specifically structured to automate, organize, and streamline the handling of activity records within ReconMMS.</p>
+
+<p>This component ensures that all tasks, events, and related records are systematically generated, updated, and maintained, providing users with a seamless and compliant workflow experience.</p>
+
+<h2 id="sample-use-cases">Sample Use Cases</h2>
+
+<h3 class="text-delta" id="use-case-1-automating-task-creation-upon-new-matter-intake">Use Case 1: Automating Task Creation Upon New Matter Intake</h3>
+
+<p><strong>Scenario:</strong> A legal team member in a government agency creates a new Matter in ReconMMS. As part of the matter intake process, specific tasks and timelines must be established for initial document reviews and case preparation.</p>
+
+<p><strong>Activity Rules System in Action:</strong></p>
+<ol>
+  <li>Activity Rule - Before Save flow verifies that required fields, such as Assignment Type, are populated and meet entry criteria</li>
+  <li>Activity Rules - Create Activity Rule Jobs flow triggers automatically based on the newly created Matter</li>
+  <li>Activity Rules - Create Child Activity Records flow creates child tasks under the Matter record</li>
+</ol>
+
+<p><strong>Outcome:</strong> The legal team member no longer needs to manually create and assign initial tasks, as the Activity Rules System automates this setup based on the new Matter. This saves time, ensures compliance, and enables immediate progress tracking within the system.</p>
+
+<h3 class="text-delta" id="use-case-2-scheduling-follow-up-dates-based-on-regulatory-deadlines">Use Case 2: Scheduling Follow-Up Dates Based on Regulatory Deadlines</h3>
+
+<p><strong>Scenario:</strong> A case manager must track upcoming deadlines for submitting filings associated with a particular Matter. To ensure timely submissions, follow-up events must be scheduled in accordance with business days.</p>
+
+<p><strong>Activity Rules System in Action:</strong></p>
+<ol>
+  <li>Activity Rules - Calculate Child Date flow calculates the required follow-up date based on a regulatory deadline</li>
+  <li>Activity Rules - Create Child Events flow automatically generates follow-up events linked to the Matter</li>
+  <li>Activity Rules - Event After Save flow checks if these events meet conditions for additional subflows</li>
+</ol>
+
+<p><strong>Outcome:</strong> The automated scheduling of follow-up events aligned with regulatory deadlines reduces the risk of missed deadlines and helps maintain compliance.</p>
+
+<h3 class="text-delta" id="use-case-3-clean-up-and-compliance-tracking-for-deleted-events">Use Case 3: Clean-Up and Compliance Tracking for Deleted Events</h3>
+
+<p><strong>Scenario:</strong> A Matter progresses, and some associated tasks or events are no longer needed.</p>
+
+<p><strong>Activity Rules System in Action:</strong></p>
+<ol>
+  <li>Activity Rules - Event On Delete flow is triggered when an event associated with a closed Matter is deleted</li>
+  <li>Activity Rules - Run Activity Rule Jobs ensures that any jobs associated with the deleted event are halted or updated</li>
+  <li>Activity Rules - Compliance Check and Notification could notify the team or log the cleanup for compliance tracking</li>
+</ol>
+
+<p><strong>Outcome:</strong> Automating the deletion process ensures that outdated records are cleaned up systematically, reducing data clutter and maintaining a compliant, up-to-date Matter record.</p>
+
+<h2 id="flow-reference">Flow Reference</h2>
+
+<h3 class="text-delta" id="core-flows">Core Flows</h3>
+
+<h4 id="activity-rule---before-save---v1">Activity Rule - Before Save - V1</h4>
+<dl>
+  <dt>Purpose</dt>
+  <dd>Ensures that required fields are populated and conditions are met before an activity rule record is saved.</dd>
+  <dt>Functionality</dt>
+  <dd>Executes conditional formulas and updates assignments, establishing initial data accuracy and preventing incomplete records from being saved.</dd>
+</dl>
+
+<h4 id="activity-rules---event-after-save">Activity Rules - Event After Save</h4>
+<dl>
+  <dt>Purpose</dt>
+  <dd>Triggers actions after an event record is saved, checking whether the event is new or updated.</dd>
+  <dt>Functionality</dt>
+  <dd>Uses decision elements to conditionally execute subflows or tasks based on event status.</dd>
+</dl>
+
+<p><a href="#" class="btn btn-outline">View all Core Flows →</a></p>
+
+<h3 class="text-delta" id="subflows">Subflows</h3>
+
+<h4 id="activity-rules---event-and-task-after-save-subflow">Activity Rules - Event and Task After Save Subflow</h4>
+<dl>
+  <dt>Purpose</dt>
+  <dd>Manages tasks and events after they are saved, checking specific conditions.</dd>
+</dl>
+
+<h4 id="activity-rules---start">Activity Rules - Start</h4>
+<dl>
+  <dt>Purpose</dt>
+  <dd>Initializes the Activity Rules System, setting up required parameters.</dd>
+</dl>
+
+<p><a href="#" class="btn btn-outline">View all Subflows →</a></p>
+
+<h2 id="technical-specifications">Technical Specifications</h2>
+
+<h3 id="system-requirements">System Requirements</h3>
+<ul>
+  <li>Salesforce org with appropriate edition</li>
+  <li>System Administrator profile or equivalent permissions</li>
+  <li>[Other requirements]</li>
+</ul>
+
+<h3 id="dependencies">Dependencies</h3>
+<ul>
+  <li>Custom Objects</li>
+  <li>Permission Sets</li>
+  <li>[Other dependencies]</li>
+</ul>
+
+<p><a href="#" class="btn btn-outline">View Technical Details →</a></p>
+
+<h2 id="complete-flow-reference">Complete Flow Reference</h2>
+
+<h3 class="text-delta" id="core-flows-1">Core Flows</h3>
+
+<h4 id="activity-rule---before-save---v1-1">Activity Rule - Before Save - V1</h4>
+<p><strong>Purpose</strong>: Ensures that required fields are populated and conditions are met before an activity rule record is saved. This flow includes entry criteria for checking if the record is new and if certain fields are populated.</p>
+
+<p><strong>Functionality</strong>: Executes conditional formulas and updates assignments, establishing initial data accuracy and preventing incomplete records from being saved.</p>
+
+<h4 id="activity-rules---event-after-save-1">Activity Rules - Event After Save</h4>
+<p><strong>Purpose</strong>: Triggers actions after an event record is saved, checking whether the event is new or updated to determine next steps.</p>
+
+<p><strong>Functionality</strong>: Uses decision elements to conditionally execute subflows or tasks based on whether the saved event is a new record or an update, allowing for appropriate follow-up actions or notifications.</p>
+
+<h4 id="activity-rules---event-and-task-after-save-subflow-1">Activity Rules - Event and Task After Save Subflow</h4>
+<p><strong>Purpose</strong>: Supports the main “Event After Save” flow by executing additional tasks associated with saved events, particularly for complex workflows where additional follow-ups are required.</p>
+
+<p><strong>Functionality</strong>: The subflow checks specific conditions related to the event’s status and executes relevant tasks or updates, providing layered task management within event-related workflows.</p>
+
+<h4 id="activity-rules---start-1">Activity Rules - Start</h4>
+<p><strong>Purpose</strong>: Serves as an initialization flow that prepares the system for executing subsequent activity rule jobs or processes.</p>
+
+<p><strong>Functionality</strong>: Initiates the sequence of rule-based tasks, ensuring that the conditions and triggers are set for executing the Activity Rules System as designed.</p>
+
+<h4 id="activity-rules---create-child-activity-records">Activity Rules - Create Child Activity Records</h4>
+<p><strong>Purpose</strong>: Generates child activity records based on certain criteria within the parent record, automating the creation of related tasks.</p>
+
+<p><strong>Functionality</strong>: Checks entry criteria and conditionally creates child records, which helps to automate task generation and ensures that necessary follow-up actions are systematically added.</p>
+
+<h4 id="activity-rules---create-activity-rule-jobs">Activity Rules - Create Activity Rule Jobs</h4>
+<p><strong>Purpose</strong>: Sets up activity rule jobs based on triggers or predefined conditions, allowing structured management of jobs related to activity rules.</p>
+
+<p><strong>Functionality</strong>: Ensures that tasks are created and queued within the system when certain conditions are met, organizing workflow steps based on specified rules.</p>
+
+<h4 id="activity-rules---run-activity-rule-jobs">Activity Rules - Run Activity Rule Jobs</h4>
+<p><strong>Purpose</strong>: Executes the jobs created by the “Create Activity Rule Jobs” flow, effectively carrying out scheduled or triggered tasks within the activity rules system.</p>
+
+<p><strong>Functionality</strong>: Manages the execution of job tasks, ensuring that rules are applied to carry out necessary actions in a structured and timely manner.</p>
+
+<h4 id="activity-rules---event-on-delete">Activity Rules - Event On Delete</h4>
+<p><strong>Purpose</strong>: Handles the deletion of events by triggering necessary actions or updates when an event is removed from the system.</p>
+
+<p><strong>Functionality</strong>: Checks conditions related to the deleted event and performs clean-up actions or related updates, maintaining data integrity and ensuring that dependent records are updated accordingly.</p>
+
+<h3 class="text-delta" id="subflow-reference">Subflow Reference</h3>
+
+<h4 id="activity-rules---event-and-task-after-save-subflow-2">Activity Rules - Event and Task After Save Subflow</h4>
+<p><strong>Purpose</strong>: Manages tasks and events after they are saved, checking specific conditions to determine further actions based on event or task status.</p>
+
+<h4 id="activity-rules---start-2">Activity Rules - Start</h4>
+<p><strong>Purpose</strong>: Initializes the Activity Rules System, setting up the required parameters and starting conditions for subsequent processes.</p>
+
+<h4 id="activity-rules---get-matter-contacts">Activity Rules - Get Matter Contacts</h4>
+<p><strong>Purpose</strong>: Retrieves contacts associated with a specific Matter, allowing subsequent actions to include relevant contact information.</p>
+
+<h4 id="activity-rules---set-primary-assignment">Activity Rules - Set Primary Assignment</h4>
+<p><strong>Purpose</strong>: Determines and assigns the primary contact or responsible party for a task or event within a Matter.</p>
+
+<h4 id="activity-rules---get-non-primary-assignments">Activity Rules - Get Non-Primary Assignments</h4>
+<p><strong>Purpose</strong>: Collects any additional contacts or responsible parties not designated as primary, allowing these to be included in activity management.</p>
+
+<h4 id="activity-rules---eventrelations">Activity Rules - EventRelations</h4>
+<p><strong>Purpose</strong>: Manages relationships between events, linking related events together within a Matter for organized tracking.</p>
+
+<h4 id="activity-rules---create-child-activity-records-1">Activity Rules - Create Child Activity Records</h4>
+<p><strong>Purpose</strong>: Automatically generates child activity records based on specific conditions, supporting structured task and event hierarchies.</p>
+
+<h4 id="activity-rules---create-child-tasks-no-sharedactivities">Activity Rules - Create Child Tasks-No SharedActivities</h4>
+<p><strong>Purpose</strong>: Creates child tasks without using Salesforce’s Shared Activities feature, ensuring each task remains individually tracked.</p>
+
+<h4 id="activity-rules---create-activity-rule-jobs-1">Activity Rules - Create Activity Rule Jobs</h4>
+<p><strong>Purpose</strong>: Sets up specific jobs or tasks under activity rules, automating task generation based on conditions in the Matter.</p>
+
+<h4 id="activity-rules---calculate-child-date">Activity Rules - Calculate Child Date</h4>
+<p><strong>Purpose</strong>: Calculates dates for child activities, adjusting for business days or other parameters, ensuring tasks align with required timelines.</p>
+
+<h4 id="activity-rules---get-assignment-ids">Activity Rules - Get Assignment IDs</h4>
+<p><strong>Purpose</strong>: Retrieves assignment IDs for associated contacts or resources, allowing assignments to be correctly linked to tasks or events.</p>
+
+<h4 id="activity-rules---error-log---v5">Activity Rules - Error Log - V5</h4>
+<p><strong>Purpose</strong>: Logs errors encountered within the Activity Rules System, aiding in troubleshooting and maintaining system integrity.</p>
+
+<h4 id="activity-rules---updated-parent-record---v8">Activity Rules - Updated Parent Record - V8</h4>
+<p><strong>Purpose</strong>: Updates the parent record when related child records or tasks change, keeping the Matter information synchronized and accurate.</p>
+
+        </main>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'forest',
+        securityLevel: 'loose'
+      });
+    });
+  </script>
+</body>
+</html>
