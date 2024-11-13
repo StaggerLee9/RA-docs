@@ -270,7 +270,152 @@ layout: table_wrappers
         <main>
           <h1 id="reconmms-setup-guide">ReconMMS Setup Guide</h1>
 
-<p>[Content for Section 3 would go here - would you like me to draft this section next?]</p>
+<h1 id="recon-configuration-overview">Recon Configuration Overview</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Recon Matter Management is a native Salesforce package tailored for legal departments in government agencies. It provides a flexible and scalable solution for tracking and managing legal cases, referred to as “matters.” This guide outlines best practices for configuring the package, focusing on aligning the setup with different legal practice areas, using Salesforce Flow for automation, and creating effective reports and dashboards.</p>
+
+<h2 id="configuring-fields-and-screens-for-practice-areas">Configuring Fields and Screens for Practice Areas</h2>
+<p>The configuration of fields and page layouts should reflect the specific legal practice areas encountered in the implementation. Different legal departments may handle a variety of case types, such as litigation, compliance, contracts, or investigations. Customizing the Matter object and related records to meet these needs ensures a user-friendly experience and maximizes system adoption.</p>
+
+<h3 id="practice-area-specific-field-configuration">Practice Area-Specific Field Configuration</h3>
+<ol>
+  <li><strong>Litigation Fields</strong>:
+    <ul>
+      <li>Create custom fields like <strong>“Case Type”</strong>, <strong>“Jurisdiction”</strong>, and <strong>“Court Date”</strong> to capture relevant litigation details.</li>
+      <li>Add picklist options for <strong>“Stage”</strong> (e.g., “Discovery,” “Pre-Trial,” “Trial”) and <strong>“Outcome”</strong> (e.g., “Settled,” “Dismissed,” “Judgment”).</li>
+    </ul>
+  </li>
+  <li><strong>Compliance Fields</strong>:
+    <ul>
+      <li>Add fields such as <strong>“Regulation Type”</strong>, <strong>“Audit Date”</strong>, and <strong>“Compliance Status”</strong> to track compliance-related matters.</li>
+      <li>Use a picklist for <strong>“Compliance Category”</strong> (e.g., “Financial,” “Environmental,” “Data Privacy”) to standardize reporting.</li>
+    </ul>
+  </li>
+  <li><strong>Contract Management Fields</strong>:
+    <ul>
+      <li>Include fields like <strong>“Contract Type”</strong>, <strong>“Effective Date”</strong>, and <strong>“Renewal Date”</strong> to manage contract details.</li>
+      <li>Add a checkbox field for <strong>“Requires Legal Review”</strong> to indicate contracts that need additional scrutiny.</li>
+    </ul>
+  </li>
+  <li><strong>Investigation Fields</strong>:
+    <ul>
+      <li>Create fields such as <strong>“Investigation Type”</strong>, <strong>“Lead Investigator”</strong>, and <strong>“Evidence Status”</strong>.</li>
+      <li>Utilize a multi-select picklist for <strong>“Investigation Focus”</strong> (e.g., “Internal Misconduct,” “Fraud,” “Regulatory Breach”).</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="customizing-page-layouts-and-record-types">Customizing Page Layouts and Record Types</h3>
+<ul>
+  <li><strong>Record Types</strong>: Create distinct record types for different practice areas (e.g., “Litigation,” “Compliance,” “Contracts,” “Investigations”). This allows for tailored page layouts and field visibility.</li>
+  <li><strong>Page Layouts</strong>: Customize the page layout for each record type to display only the fields relevant to that practice area. For instance, the “Litigation” layout could prioritize court details and hearing dates, while the “Compliance” layout could focus on audit and regulatory information.</li>
+  <li><strong>Dynamic Forms</strong>: Leverage Salesforce Dynamic Forms to display specific fields based on the user’s role or the status of the Matter. This improves usability by reducing clutter and ensuring that users see only relevant information.</li>
+</ul>
+
+<p><strong>Best Practice</strong>: Regularly review and update custom fields and page layouts as the organization’s needs evolve. Engage with end-users to gather feedback on what fields are most useful for their specific workflows.</p>
+
+<h2 id="automating-workflows-with-salesforce-flow">Automating Workflows with Salesforce Flow</h2>
+<p>Salesforce Flow is the preferred tool for automating processes within Recon Matter Management. It enables the creation of complex, no-code workflows that reduce manual effort and streamline case management.</p>
+
+<h3 id="automating-task-creation">Automating Task Creation</h3>
+<p><strong>Objective</strong>: Generate standard tasks based on the Matter Type when a new Matter record is created.</p>
+
+<p><strong>Configuration Steps</strong>:</p>
+<ol>
+  <li>Create a <strong>Record-Triggered Flow</strong> on the Matter object, set to run when a new record is created.</li>
+  <li>Add a <strong>Decision Element</strong> to branch the flow based on the Matter Type (e.g., Litigation, Compliance).</li>
+  <li>Use the <strong>Create Records</strong> element to generate tasks such as “Document Review” or “Initial Client Meeting,” setting default due dates based on the case timeline.</li>
+  <li>Assign tasks using the Matter Contact roles (e.g., “Lead Attorney,” “Paralegal”).</li>
+</ol>
+
+<p><strong>Tip</strong>: Use custom labels for task subjects to maintain consistency across practice areas and improve task tracking.</p>
+
+<h3 id="automating-status-updates">Automating Status Updates</h3>
+<p><strong>Objective</strong>: Automatically update related Matter Contacts when the Matter status changes.</p>
+
+<p><strong>Configuration Steps</strong>:</p>
+<ol>
+  <li>Set up a <strong>Record-Triggered Flow</strong> on the Matter object, triggered when the Status field is updated (e.g., “Closed”).</li>
+  <li>Use the <strong>Get Records</strong> element to fetch all related Matter Contacts.</li>
+  <li>Update each Matter Contact’s status to “Inactive” using the <strong>Update Records</strong> element.</li>
+</ol>
+
+<p><strong>Recommendation</strong>: Use the “Last Modified By” field on the Matter Contact record to track who made the update, providing an audit trail for compliance purposes.</p>
+
+<h3 id="approval-processes-for-key-decisions">Approval Processes for Key Decisions</h3>
+<p><strong>Objective</strong>: Implement an approval process for critical Matter stages, such as when a document needs legal review.</p>
+
+<p><strong>Configuration Steps</strong>:</p>
+<ol>
+  <li>Create an <strong>Approval Process</strong> on the Matter object with entry criteria based on the Matter Type and Status (e.g., “Pending Review”).</li>
+  <li>Use a <strong>Record-Triggered Flow</strong> to launch the approval process when the criteria are met.</li>
+  <li>Configure email notifications and reminders within the Flow to keep approvers informed.</li>
+</ol>
+
+<p><strong>Best Practice</strong>: Regularly review approval processes to ensure they align with current legal procedures and policies.</p>
+
+<h2 id="building-reports-and-dashboards">Building Reports and Dashboards</h2>
+<p>Effective reporting is crucial for providing insights into matter status, task completion, and overall case management performance. Recon Matter Management leverages standard Salesforce reporting features, enabling admins to build powerful reports and dashboards.</p>
+
+<h3 id="creating-standard-reports">Creating Standard Reports</h3>
+<ol>
+  <li><strong>Matter Status Report</strong>:
+    <ul>
+      <li>Use the Matter object to create a summary report that shows the number of open, closed, and pending Matters, grouped by Matter Type.</li>
+      <li>Include filters for practice area, stage, and assigned attorney to provide actionable insights.</li>
+    </ul>
+  </li>
+  <li><strong>Task Completion Report</strong>:
+    <ul>
+      <li>Create a report on the Task object to track task completion rates for each Matter Type.</li>
+      <li>Group tasks by status (e.g., “Completed,” “In Progress,” “Overdue”) and display the results in a bar chart.</li>
+    </ul>
+  </li>
+  <li><strong>Compliance Audit Report</strong>:
+    <ul>
+      <li>Build a matrix report using the Compliance-related fields on the Matter object.</li>
+      <li>Highlight upcoming audits and their compliance status, using conditional formatting to flag overdue items.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="designing-dashboards">Designing Dashboards</h3>
+<ol>
+  <li><strong>Matter Overview Dashboard</strong>:
+    <ul>
+      <li>Include components like “Matters by Type,” “Open Matters by Practice Area,” and “Upcoming Court Dates.”</li>
+      <li>Use charts and tables to provide a quick visual summary of the legal department’s workload.</li>
+    </ul>
+  </li>
+  <li><strong>Task Management Dashboard</strong>:
+    <ul>
+      <li>Display key metrics such as “Tasks Due This Week,” “Overdue Tasks,” and “Task Completion by User.”</li>
+      <li>Include filters for Matter Type and user role to allow for more detailed analysis.</li>
+    </ul>
+  </li>
+  <li><strong>Compliance Monitoring Dashboard</strong>:
+    <ul>
+      <li>Include components showing “Compliance Audits by Status” and “Regulatory Issues by Practice Area.”</li>
+      <li>Use dynamic filters to allow legal managers to drill down into specific issues.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Best Practice</strong>: Schedule reports and dashboards for regular distribution to key stakeholders, ensuring that the legal team stays informed and proactive.</p>
+
+<h2 id="summary">Summary</h2>
+<p>Configuring Recon Matter Management effectively involves tailoring the system to reflect different legal practice areas, automating key workflows with Salesforce Flow, and building insightful reports and dashboards. This approach enhances the efficiency of legal teams, reduces manual work, and provides a comprehensive view of matter management activities.</p>
+
+<h3 id="key-takeaways">Key Takeaways:</h3>
+<ul>
+  <li>Customize fields and layouts based on legal practice areas for improved user experience.</li>
+  <li>Use Salesforce Flow for all automation needs, replacing manual processes and deprecated tools like Process Builder.</li>
+  <li>Design reports and dashboards to offer real-time insights, supporting informed decision-making.</li>
+</ul>
+
+<p>By following these best practices, the Recon Matter Management package can be configured to meet the specific needs of any legal department in a government agency.</p>
+
 
         </main>
       </div>

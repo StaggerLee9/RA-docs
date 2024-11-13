@@ -1703,1285 +1703,1481 @@ layout: table_wrappers
   },"208": {
     "doc": "Legal Matter Management",
     "title": "Legal Matter Management",
-    "content": "[Content for Section 2 would go here - would you like me to draft this section next?] . ",
+    "content": " ",
     "url": "/pages/configuration/matter-management.html",
     
     "relUrl": "/pages/configuration/matter-management.html"
   },"209": {
+    "doc": "Legal Matter Management",
+    "title": "Introduction to Legal Matter Management",
+    "content": " ",
+    "url": "/pages/configuration/matter-management.html#introduction-to-legal-matter-management",
+    
+    "relUrl": "/pages/configuration/matter-management.html#introduction-to-legal-matter-management"
+  },"210": {
+    "doc": "Legal Matter Management",
+    "title": "Overview",
+    "content": "Legal Matter Management (LMM), often known as Case Management, is a method used by legal teams to organize, track, and manage legal matters or cases. This practice is essential for government agencies handling various types of legal issues, from litigation and compliance to contract disputes and investigations. For a Salesforce admin or developer, understanding the basics of LMM is key to effectively implementing solutions like Recon Matter Management. LMM focuses on centralizing records, automating tasks, and ensuring compliance across all stages of a legal matter, providing transparency and control to legal teams. ",
+    "url": "/pages/configuration/matter-management.html#overview",
+    
+    "relUrl": "/pages/configuration/matter-management.html#overview"
+  },"211": {
+    "doc": "Legal Matter Management",
+    "title": "What is Matter Management?",
+    "content": "At its core, “matter management” refers to the process of tracking any legal issue that requires attention, documentation, and action. Here are a few common scenarios: . | Litigation Cases: Handling lawsuits or legal disputes. | Compliance Matters: Managing regulatory checks and audits. | Contract Disputes: Overseeing negotiations and resolving contract issues. | Internal Investigations: Handling employee-related inquiries or misconduct cases. | . For each matter type, the legal team needs to gather documents, track deadlines, and coordinate tasks among various stakeholders. A well-structured matter management system ensures that nothing falls through the cracks. ",
+    "url": "/pages/configuration/matter-management.html#what-is-matter-management",
+    
+    "relUrl": "/pages/configuration/matter-management.html#what-is-matter-management"
+  },"212": {
+    "doc": "Legal Matter Management",
+    "title": "Key Components of Matter Management",
+    "content": ". | Central Record Keeping: Store all relevant information (contacts, documents, events) in a single record for each matter. | Task and Deadline Tracking: Keep track of important dates and actions, like court filings or contract renewals. | Collaboration Tools: Facilitate communication between internal teams, clients, and external counsel. | Document Management: Efficiently organize and access legal documents such as contracts, evidence, and filings. | . ",
+    "url": "/pages/configuration/matter-management.html#key-components-of-matter-management",
+    
+    "relUrl": "/pages/configuration/matter-management.html#key-components-of-matter-management"
+  },"213": {
+    "doc": "Legal Matter Management",
+    "title": "Common Legal Matter Scenarios",
+    "content": " ",
+    "url": "/pages/configuration/matter-management.html#common-legal-matter-scenarios",
+    
+    "relUrl": "/pages/configuration/matter-management.html#common-legal-matter-scenarios"
+  },"214": {
+    "doc": "Legal Matter Management",
+    "title": "1. Managing Litigation Cases",
+    "content": "In litigation, legal teams must coordinate numerous tasks like filing documents, gathering evidence, and scheduling hearings. A robust matter management system can simplify this by: . | Providing a central view of all case information. | Automating the creation of tasks for document preparation and evidence collection. | Alerting team members about upcoming deadlines. | . Example in Recon: When a litigation matter is created, Recon automatically sets up tasks such as “Review Initial Documents” and “Prepare for Hearing,” assigning deadlines based on predefined templates. ",
+    "url": "/pages/configuration/matter-management.html#1-managing-litigation-cases",
+    
+    "relUrl": "/pages/configuration/matter-management.html#1-managing-litigation-cases"
+  },"215": {
+    "doc": "Legal Matter Management",
+    "title": "2. Handling Contract Reviews",
+    "content": "Contracts are a critical part of any legal department’s workload. Managing contracts effectively involves tracking versions, obtaining approvals, and setting reminders for renewals. | Store all contract versions in a central repository linked to the matter record. | Set up automated reminders for contract reviews and upcoming renewals. | Collaborate with stakeholders for efficient contract approvals. | . Example in Recon: In Recon Matter Management, contracts are attached to matter records. Approval processes are initiated automatically, and users receive notifications when a contract requires review or renewal. ",
+    "url": "/pages/configuration/matter-management.html#2-handling-contract-reviews",
+    
+    "relUrl": "/pages/configuration/matter-management.html#2-handling-contract-reviews"
+  },"216": {
+    "doc": "Legal Matter Management",
+    "title": "3. Conducting Internal Investigations",
+    "content": "Investigations, whether internal or external, often involve collecting evidence, interviewing witnesses, and documenting findings. A good matter management system will: . | Create a clear timeline of investigation activities. | Link evidence and witness statements directly to the matter record. | Provide audit trails for compliance and reporting purposes. | . Example in Recon: Recon uses Activity Rules to generate follow-up tasks based on events during the investigation. For instance, scheduling an interview triggers a task for collecting relevant evidence, which is then linked to the investigation record. ",
+    "url": "/pages/configuration/matter-management.html#3-conducting-internal-investigations",
+    
+    "relUrl": "/pages/configuration/matter-management.html#3-conducting-internal-investigations"
+  },"217": {
+    "doc": "Legal Matter Management",
+    "title": "How Recon Matter Management Applies LMM Practices",
+    "content": " ",
+    "url": "/pages/configuration/matter-management.html#how-recon-matter-management-applies-lmm-practices",
+    
+    "relUrl": "/pages/configuration/matter-management.html#how-recon-matter-management-applies-lmm-practices"
+  },"218": {
+    "doc": "Legal Matter Management",
+    "title": "Use Case 1: Streamlined Task Creation",
+    "content": "Scenario: A legal team receives a new compliance request. Tasks need to be assigned for document review, stakeholder interviews, and report submission. In Recon: . | The compliance request triggers automatic task creation. | Tasks are assigned based on predefined rules, reducing manual entry. | Notifications keep team members informed about task deadlines. | . ",
+    "url": "/pages/configuration/matter-management.html#use-case-1-streamlined-task-creation",
+    
+    "relUrl": "/pages/configuration/matter-management.html#use-case-1-streamlined-task-creation"
+  },"219": {
+    "doc": "Legal Matter Management",
+    "title": "Use Case 2: Automated Contract Management",
+    "content": "Scenario: A government agency needs to manage contract renewals to avoid lapses in service agreements. In Recon: . | The system stores all contract versions and sets automated reminders before renewal deadlines. | Recon generates approval tasks and routes them to the necessary approvers, ensuring timely reviews. | . ",
+    "url": "/pages/configuration/matter-management.html#use-case-2-automated-contract-management",
+    
+    "relUrl": "/pages/configuration/matter-management.html#use-case-2-automated-contract-management"
+  },"220": {
+    "doc": "Legal Matter Management",
+    "title": "Use Case 3: Efficient Litigation Tracking",
+    "content": "Scenario: A legal team is managing a complex case with multiple parties and deadlines. In Recon: . | The matter record tracks all related contacts, documents, and events. | Automated scheduling of tasks and deadlines ensures no critical steps are missed. | Team members receive updates on progress, improving coordination and reducing the risk of errors. | . ",
+    "url": "/pages/configuration/matter-management.html#use-case-3-efficient-litigation-tracking",
+    
+    "relUrl": "/pages/configuration/matter-management.html#use-case-3-efficient-litigation-tracking"
+  },"221": {
+    "doc": "Legal Matter Management",
+    "title": "Final Thoughts",
+    "content": "Legal Matter Management is about organizing, tracking, and resolving legal issues efficiently. For government agencies, having a reliable system like Recon Matter Management helps streamline these processes, ensuring compliance and improving outcomes. ",
+    "url": "/pages/configuration/matter-management.html#final-thoughts",
+    
+    "relUrl": "/pages/configuration/matter-management.html#final-thoughts"
+  },"222": {
+    "doc": "Legal Matter Management",
+    "title": "Key Benefits of Recon Matter Management:",
+    "content": ". | Standardized templates and automation for consistent handling of matters. | Integrated document management for easy access and collaboration. | Automation tools that reduce manual workload and increase productivity. | . By using a Salesforce-native solution like Recon, legal teams can leverage familiar technology and enhance their operations, while Salesforce admins and developers have a flexible platform to customize and extend. ",
+    "url": "/pages/configuration/matter-management.html#key-benefits-of-recon-matter-management",
+    
+    "relUrl": "/pages/configuration/matter-management.html#key-benefits-of-recon-matter-management"
+  },"223": {
     "doc": "Matter Note",
     "title": "Matter Note (Matter_Note__c)",
     "content": " ",
     "url": "/pages/objects/matter-note.html#matter-note-matter_note__c",
     
     "relUrl": "/pages/objects/matter-note.html#matter-note-matter_note__c"
-  },"210": {
+  },"224": {
     "doc": "Matter Note",
     "title": "Overview",
     "content": "The Matter Note object is used to store and manage notes related to Matters, with the ability to categorize notes by type and control privacy settings. The object uses a lookup relationship to Matter to enable record-level security, allowing notes to be marked as private. ",
     "url": "/pages/objects/matter-note.html#overview",
     
     "relUrl": "/pages/objects/matter-note.html#overview"
-  },"211": {
+  },"225": {
     "doc": "Matter Note",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | Matter_Note__c | . | Label | Matter Note | . | Plural Label | Matter Notes | . | Sharing Model | ReadWrite | . ",
     "url": "/pages/objects/matter-note.html#object-details",
     
     "relUrl": "/pages/objects/matter-note.html#object-details"
-  },"212": {
+  },"226": {
     "doc": "Matter Note",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Matter Note ID | Name | Auto-number | Unique identifier (e.g., “MN-0001”) | . | Matter | Matter__c | Lookup | Link to Matter record | . | Note | Note__c | HTML | Rich text note content (131,072 chars) | . | Private | Private__c | Checkbox | Indicates if note is private (Default: false) | . | Type | Type__c | Picklist | Categorizes the type of note | . ",
     "url": "/pages/objects/matter-note.html#fields",
     
     "relUrl": "/pages/objects/matter-note.html#fields"
-  },"213": {
+  },"227": {
     "doc": "Matter Note",
     "title": "Key Features",
     "content": ". | Activities Enabled: Yes | Reporting: Supported | Bulk API: Enabled | Streaming API: Enabled | Search: Custom search layout includes note content | Record-Level Security: Enabled through lookup relationship | Rich Text Support: HTML formatting for notes | Privacy Controls: Individual note privacy settings | . ",
     "url": "/pages/objects/matter-note.html#key-features",
     
     "relUrl": "/pages/objects/matter-note.html#key-features"
-  },"214": {
+  },"228": {
     "doc": "Matter Note",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/matter-note.html#relationships",
     
     "relUrl": "/pages/objects/matter-note.html#relationships"
-  },"215": {
+  },"229": {
     "doc": "Matter Note",
     "title": "Parent Objects",
     "content": ". | Matter (via Matter__c lookup) | . ",
     "url": "/pages/objects/matter-note.html#parent-objects",
     
     "relUrl": "/pages/objects/matter-note.html#parent-objects"
-  },"216": {
+  },"230": {
     "doc": "Matter Note",
     "title": "Security Model",
     "content": ". | Independent sharing model (ReadWrite) | Privacy controls at record level | Support for record-level security | . ",
     "url": "/pages/objects/matter-note.html#security-model",
     
     "relUrl": "/pages/objects/matter-note.html#security-model"
-  },"217": {
+  },"231": {
     "doc": "Matter Note",
     "title": "Common Use Cases",
     "content": ". | Case Documentation . | Recording matter updates | Documenting key decisions | Tracking important communications | . | Private Notes . | Maintaining confidential information | Recording sensitive details | Managing restricted access notes | . | Team Communication . | Sharing matter updates | Recording meeting notes | Documenting action items | . | . ",
     "url": "/pages/objects/matter-note.html#common-use-cases",
     
     "relUrl": "/pages/objects/matter-note.html#common-use-cases"
-  },"218": {
+  },"232": {
     "doc": "Matter Note",
     "title": "Best Practices",
     "content": ". | Note Management . | Use clear, descriptive titles | Properly categorize notes by type | Set appropriate privacy settings | . | Content Organization . | Use consistent formatting | Include relevant dates | Reference related records | . | Privacy Control . | Review privacy settings regularly | Document privacy requirements | Monitor access patterns | . | . ",
     "url": "/pages/objects/matter-note.html#best-practices",
     
     "relUrl": "/pages/objects/matter-note.html#best-practices"
-  },"219": {
+  },"233": {
     "doc": "Matter Note",
     "title": "Matter Note",
     "content": " ",
     "url": "/pages/objects/matter-note.html",
     
     "relUrl": "/pages/objects/matter-note.html"
-  },"220": {
+  },"234": {
     "doc": "Matter Relationships",
     "title": "Matter Relationships",
     "content": " ",
     "url": "/pages/relationships/matter-relationships.html",
     
     "relUrl": "/pages/relationships/matter-relationships.html"
-  },"221": {
+  },"235": {
     "doc": "Matter Relationships",
     "title": "Overview",
     "content": "The Matter object serves as a central point in ReconMMS, connecting various aspects of legal case management. This document outlines all objects and fields that connect to the Matter (Matter__c) object. ",
     "url": "/pages/relationships/matter-relationships.html#overview",
     
     "relUrl": "/pages/relationships/matter-relationships.html#overview"
-  },"222": {
+  },"236": {
     "doc": "Matter Relationships",
     "title": "Entity Relationship Diagram",
     "content": "erDiagram Matter ||--o{ MatterContact : \"has many\" Matter ||--o{ MatterAccount : \"has many\" Matter ||--o{ MatterNote : \"has many\" Matter ||--o{ RelatedMatter : \"has many\" Matter ||--o{ StageActivity : \"has many\" Matter ||--o{ WorkGroup : \"has many\" Matter ||--o{ Remedy : \"has many\" Matter ||--o{ Workflow : \"has many\" Matter }o--|| Investigation : \"belongs to\" Matter }o--|| Request : \"belongs to\" Matter ||--o{ Issue : \"has many\" Matter ||--o{ Statute : \"has many\" Matter { string Name PK lookup Investigation__c FK lookup Request__c FK date Opened__c date Closed__c string Description__c picklist Practice_Area__c picklist Stage__c picklist Status__c picklist Team__c picklist Type__c } MatterContact { string Name PK masterdetail Matter__c FK lookup Contact__c FK date Start_Date__c date End_Date__c picklist Role__c formula Active__c } MatterAccount { string Name PK masterdetail Matter__c FK lookup Account__c FK date Start_Date__c date End_Date__c picklist Role__c } MatterNote { string Name PK lookup Matter__c FK html Note__c boolean Private__c picklist Type__c } RelatedMatter { string Name PK masterdetail Parent_Matter__c FK lookup Related_Matter__c FK date Start_Date__c date End_Date__c picklist Type__c } Remedy { string Name PK masterdetail Matter__c FK } WorkGroup { string Name PK lookup Matter__c FK picklist Permission__c } . ",
     "url": "/pages/relationships/matter-relationships.html#entity-relationship-diagram",
     
     "relUrl": "/pages/relationships/matter-relationships.html#entity-relationship-diagram"
-  },"223": {
+  },"237": {
     "doc": "Matter Relationships",
     "title": "Diagram Legend",
     "content": ". | ** |   | –o{** : One-to-many (master-detail) relationship | . | | **}o– |   | ** : Many-to-one (lookup) relationship | . | PK: Primary Key | FK: Foreign Key | . ",
     "url": "/pages/relationships/matter-relationships.html#diagram-legend",
     
     "relUrl": "/pages/relationships/matter-relationships.html#diagram-legend"
-  },"224": {
+  },"238": {
     "doc": "Matter Relationships",
     "title": "Master-Detail Relationships",
     "content": " ",
     "url": "/pages/relationships/matter-relationships.html#master-detail-relationships",
     
     "relUrl": "/pages/relationships/matter-relationships.html#master-detail-relationships"
-  },"225": {
+  },"239": {
     "doc": "Matter Relationships",
     "title": "Matter Contact (Matter_Contact__c)",
     "content": "Purpose: Tracks all individuals associated with a matter . | Field on Matter Contact: Matter__c | Relationship Type: Master-Detail | Deletion Behavior: Cascade delete | Sharing: Inherits from Matter | Key Fields: . | Contact__c (Lookup to Contact) | Role__c (Contact’s role in matter) | Start_Date__c/End_Date__c (Involvement period) | Active__c (Current status) | . | . ",
     "url": "/pages/relationships/matter-relationships.html#matter-contact-matter_contact__c",
     
     "relUrl": "/pages/relationships/matter-relationships.html#matter-contact-matter_contact__c"
-  },"226": {
+  },"240": {
     "doc": "Matter Relationships",
     "title": "Matter Account (Matter_Account__c)",
     "content": "Purpose: Tracks all organizations associated with a matter . | Field on Matter Account: Matter__c | Relationship Type: Master-Detail | Deletion Behavior: Cascade delete | Sharing: Inherits from Matter | Key Fields: . | Account__c (Lookup to Account) | Role__c (Organization’s role) | Start_Date__c/End_Date__c (Involvement period) | . | . ",
     "url": "/pages/relationships/matter-relationships.html#matter-account-matter_account__c",
     
     "relUrl": "/pages/relationships/matter-relationships.html#matter-account-matter_account__c"
-  },"227": {
+  },"241": {
     "doc": "Matter Relationships",
     "title": "Related Matter (Related_Matter__c)",
     "content": "Purpose: Links related legal matters together . | Field on Related Matter: Parent_Matter__c | Relationship Type: Master-Detail | Key Fields: . | Related_Matter__c (Lookup to Matter) | Type__c (Relationship type) | Start_Date__c/End_Date__c (Relationship period) | . | . ",
     "url": "/pages/relationships/matter-relationships.html#related-matter-related_matter__c",
     
     "relUrl": "/pages/relationships/matter-relationships.html#related-matter-related_matter__c"
-  },"228": {
+  },"242": {
     "doc": "Matter Relationships",
     "title": "Remedy (Remedy__c)",
     "content": "Purpose: Tracks remedies associated with the matter . | Field on Remedy: Matter__c | Relationship Type: Master-Detail | Deletion Behavior: Cascade delete | . ",
     "url": "/pages/relationships/matter-relationships.html#remedy-remedy__c",
     
     "relUrl": "/pages/relationships/matter-relationships.html#remedy-remedy__c"
-  },"229": {
+  },"243": {
     "doc": "Matter Relationships",
     "title": "Stage Activity (Stage_Activity__c)",
     "content": "Purpose: Tracks matter stages and milestones . | Field on Stage Activity: Matter__c | Relationship Type: Master-Detail | Deletion Behavior: Cascade delete | . ",
     "url": "/pages/relationships/matter-relationships.html#stage-activity-stage_activity__c",
     
     "relUrl": "/pages/relationships/matter-relationships.html#stage-activity-stage_activity__c"
-  },"230": {
+  },"244": {
     "doc": "Matter Relationships",
     "title": "Lookup Relationships",
     "content": " ",
     "url": "/pages/relationships/matter-relationships.html#lookup-relationships",
     
     "relUrl": "/pages/relationships/matter-relationships.html#lookup-relationships"
-  },"231": {
+  },"245": {
     "doc": "Matter Relationships",
     "title": "Matter Note (Matter_Note__c)",
     "content": "Purpose: Stores matter-related notes with privacy controls . | Field on Matter Note: Matter__c | Relationship Type: Lookup | Key Fields: . | Note__c (Rich text content) | Private__c (Privacy flag) | Type__c (Note categorization) | . | . ",
     "url": "/pages/relationships/matter-relationships.html#matter-note-matter_note__c",
     
     "relUrl": "/pages/relationships/matter-relationships.html#matter-note-matter_note__c"
-  },"232": {
+  },"246": {
     "doc": "Matter Relationships",
     "title": "Work Group (Work_Group__c)",
     "content": "Purpose: Associates work groups with matters . | Field on Work Group: Matter__c | Relationship Type: Lookup | Key Fields: . | Permission__c (Access level) | . | . ",
     "url": "/pages/relationships/matter-relationships.html#work-group-work_group__c",
     
     "relUrl": "/pages/relationships/matter-relationships.html#work-group-work_group__c"
-  },"233": {
+  },"247": {
     "doc": "Matter Relationships",
     "title": "Related Records ON Matter",
     "content": ". | Investigation__c: Links to related investigation | Request__c: Links to originating request | . ",
     "url": "/pages/relationships/matter-relationships.html#related-records-on-matter",
     
     "relUrl": "/pages/relationships/matter-relationships.html#related-records-on-matter"
-  },"234": {
+  },"248": {
     "doc": "Matter Relationships",
     "title": "Junction Objects",
     "content": " ",
     "url": "/pages/relationships/matter-relationships.html#junction-objects",
     
     "relUrl": "/pages/relationships/matter-relationships.html#junction-objects"
-  },"235": {
+  },"249": {
     "doc": "Matter Relationships",
     "title": "Matter-Issue Relationship",
     "content": "Purpose: Links issues to matters . | Object: Issue__c | Relationship Type: Configurable | Key Considerations: . | Flexible relationship type | Supports multiple issues per matter | . | . ",
     "url": "/pages/relationships/matter-relationships.html#matter-issue-relationship",
     
     "relUrl": "/pages/relationships/matter-relationships.html#matter-issue-relationship"
-  },"236": {
+  },"250": {
     "doc": "Matter Relationships",
     "title": "Matter-Statute Relationship",
     "content": "Purpose: Associates relevant statutes . | Object: Statute__c | Relationship Type: Configurable | Key Considerations: . | Flexible relationship type | Supports multiple statutes per matter | . | . ",
     "url": "/pages/relationships/matter-relationships.html#matter-statute-relationship",
     
     "relUrl": "/pages/relationships/matter-relationships.html#matter-statute-relationship"
-  },"237": {
+  },"251": {
     "doc": "Matter Relationships",
     "title": "Common Use Cases",
     "content": ". | Team Management . | Assigning team members via Matter Contact | Setting up work groups | Managing roles and permissions | . | Relationship Tracking . | Recording organization involvement | Managing contact relationships | Tracking related matters | . | Documentation . | Creating private and public notes | Recording remedies | Tracking stage progression | . | . ",
     "url": "/pages/relationships/matter-relationships.html#common-use-cases",
     
     "relUrl": "/pages/relationships/matter-relationships.html#common-use-cases"
-  },"238": {
+  },"252": {
     "doc": "Matter Relationships",
     "title": "Best Practices",
     "content": " ",
     "url": "/pages/relationships/matter-relationships.html#best-practices",
     
     "relUrl": "/pages/relationships/matter-relationships.html#best-practices"
-  },"239": {
+  },"253": {
     "doc": "Matter Relationships",
     "title": "Relationship Management",
     "content": ". | Record Creation . | Establish clear roles | Set accurate dates | Maintain relationship types | . | Data Maintenance . | Regular status updates | Timeline accuracy | Relationship verification | . | Access Control . | Appropriate sharing rules | Work group configuration | Note privacy settings | . | . ",
     "url": "/pages/relationships/matter-relationships.html#relationship-management",
     
     "relUrl": "/pages/relationships/matter-relationships.html#relationship-management"
-  },"240": {
+  },"254": {
     "doc": "Matter Relationships",
     "title": "Implementation Guidelines",
     "content": ". | Setup Requirements . | Field-level security | Page layouts | Record types | Sharing rules | . | Automation Considerations . | Workflow rules | Process builders | Validation rules | Triggers | . | Security Configuration . | Object permissions | Field permissions | Sharing rules | Record access | . | Data Migration Planning . | Required fields | Relationship validation | Data cleanup | Import order | . | . ",
     "url": "/pages/relationships/matter-relationships.html#implementation-guidelines",
     
     "relUrl": "/pages/relationships/matter-relationships.html#implementation-guidelines"
-  },"241": {
+  },"255": {
     "doc": "Matter",
     "title": "Matter (Matter__c)",
     "content": " ",
     "url": "/pages/objects/matter.html#matter-matter__c",
     
     "relUrl": "/pages/objects/matter.html#matter-matter__c"
-  },"242": {
+  },"256": {
     "doc": "Matter",
     "title": "Overview",
     "content": "The Matter object is used to track legal matters (also known as Cases) and their related data. This object serves as a central point for managing legal cases, their progress, and associated relationships. ",
     "url": "/pages/objects/matter.html#overview",
     
     "relUrl": "/pages/objects/matter.html#overview"
-  },"243": {
+  },"257": {
     "doc": "Matter",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | Matter__c | . | Label | Matter | . | Plural Label | Matters | . | Sharing Model | Private | . ",
     "url": "/pages/objects/matter.html#object-details",
     
     "relUrl": "/pages/objects/matter.html#object-details"
-  },"244": {
+  },"258": {
     "doc": "Matter",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Matter Name | Name | Text | Primary identifier for each matter record | . | Closed | Closed__c | Date | Date when the matter was closed | . | Description | Description__c | Long Text Area | Detailed matter descriptions (131,072 chars) | . | Investigation | Investigation__c | Lookup | Link to Investigation record | . | Opened | Opened__c | Date | Date when the matter was opened | . | Practice Area | Practice_Area__c | Picklist | Area of legal practice | . | Request | Request__c | Lookup | Link to Request record | . | Stage | Stage__c | Picklist | Current stage of the matter | . | Status | Status__c | Picklist | Open/Closed status | . | Team / Unit | Team__c | Picklist | Responsible team or unit | . | Type | Type__c | Picklist | Type of matter | . ",
     "url": "/pages/objects/matter.html#fields",
     
     "relUrl": "/pages/objects/matter.html#fields"
-  },"245": {
+  },"259": {
     "doc": "Matter",
     "title": "Record Types",
     "content": " ",
     "url": "/pages/objects/matter.html#record-types",
     
     "relUrl": "/pages/objects/matter.html#record-types"
-  },"246": {
+  },"260": {
     "doc": "Matter",
     "title": "Litigation",
     "content": ". | Active record type for litigation-related matters | All picklist values enabled for Practice Area, Stage, Status, Team, and Type fields | . ",
     "url": "/pages/objects/matter.html#litigation",
     
     "relUrl": "/pages/objects/matter.html#litigation"
-  },"247": {
+  },"261": {
     "doc": "Matter",
     "title": "Transactions",
     "content": ". | Active record type for transaction-related matters | All picklist values enabled for Practice Area, Stage, Status, Team, and Type fields | . ",
     "url": "/pages/objects/matter.html#transactions",
     
     "relUrl": "/pages/objects/matter.html#transactions"
-  },"248": {
+  },"262": {
     "doc": "Matter",
     "title": "Key Features",
     "content": ". | Activities Enabled: Supports activity tracking | Reporting: Supports report generation and analytics | Bulk API: Enables bulk data operations | Streaming API: Supports real-time notifications | Search: Records are searchable with custom search layouts | Visibility: Public | Custom Record Page: Uses “Matter_Record_Page” for desktop and mobile | . ",
     "url": "/pages/objects/matter.html#key-features",
     
     "relUrl": "/pages/objects/matter.html#key-features"
-  },"249": {
+  },"263": {
     "doc": "Matter",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/matter.html#relationships",
     
     "relUrl": "/pages/objects/matter.html#relationships"
-  },"250": {
+  },"264": {
     "doc": "Matter",
     "title": "Parent Objects",
     "content": ". | Investigation (via Investigation__c lookup) | Request (via Request__c lookup) | . ",
     "url": "/pages/objects/matter.html#parent-objects",
     
     "relUrl": "/pages/objects/matter.html#parent-objects"
-  },"251": {
+  },"265": {
     "doc": "Matter",
     "title": "Child Objects",
     "content": ". | Matter Account (Matter_Account__c) | Matter Contact (Matter_Contact__c) | Matter Note (Matter_Note__c) | Related Matter (Related_Matter__c) | Stage Activity (Stage_Activity__c) | Work Group (Work_Group__c) | . ",
     "url": "/pages/objects/matter.html#child-objects",
     
     "relUrl": "/pages/objects/matter.html#child-objects"
-  },"252": {
+  },"266": {
     "doc": "Matter",
     "title": "Common Use Cases",
     "content": ". | Case Management . | Tracking legal matters from initiation to closure | Managing matter relationships and participants | Monitoring case progress and deadlines | . | Team Collaboration . | Assigning matters to teams/units | Tracking matter participants | Sharing matter information across teams | . | Reporting and Analytics . | Matter status reporting | Team workload analysis | Practice area metrics | . | . ",
     "url": "/pages/objects/matter.html#common-use-cases",
     
     "relUrl": "/pages/objects/matter.html#common-use-cases"
-  },"253": {
+  },"267": {
     "doc": "Matter",
     "title": "Best Practices",
     "content": ". | Matter Creation . | Use consistent naming conventions | Properly categorize matters by type and practice area | Set appropriate stage and status values | . | Relationship Management . | Link all relevant contacts and accounts | Maintain accurate participant records | Document relationship changes | . | Record Maintenance . | Keep status and stage fields current | Update closure dates promptly | Maintain accurate team assignments | . | . ",
     "url": "/pages/objects/matter.html#best-practices",
     
     "relUrl": "/pages/objects/matter.html#best-practices"
-  },"254": {
+  },"268": {
     "doc": "Matter",
     "title": "Matter",
     "content": " ",
     "url": "/pages/objects/matter.html",
     
     "relUrl": "/pages/objects/matter.html"
-  },"255": {
+  },"269": {
     "doc": "Object Reference",
     "title": "Object Reference",
     "content": " ",
     "url": "/pages/object-reference.html",
     
     "relUrl": "/pages/object-reference.html"
-  },"256": {
+  },"270": {
     "doc": "ReconMMS Setup",
     "title": "ReconMMS Setup Guide",
-    "content": "[Content for Section 3 would go here - would you like me to draft this section next?] . ",
+    "content": " ",
     "url": "/pages/configuration/recon-setup.html#reconmms-setup-guide",
     
     "relUrl": "/pages/configuration/recon-setup.html#reconmms-setup-guide"
-  },"257": {
+  },"271": {
+    "doc": "ReconMMS Setup",
+    "title": "Recon Configuration Overview",
+    "content": " ",
+    "url": "/pages/configuration/recon-setup.html#recon-configuration-overview",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#recon-configuration-overview"
+  },"272": {
+    "doc": "ReconMMS Setup",
+    "title": "Introduction",
+    "content": "Recon Matter Management is a native Salesforce package tailored for legal departments in government agencies. It provides a flexible and scalable solution for tracking and managing legal cases, referred to as “matters.” This guide outlines best practices for configuring the package, focusing on aligning the setup with different legal practice areas, using Salesforce Flow for automation, and creating effective reports and dashboards. ",
+    "url": "/pages/configuration/recon-setup.html#introduction",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#introduction"
+  },"273": {
+    "doc": "ReconMMS Setup",
+    "title": "Configuring Fields and Screens for Practice Areas",
+    "content": "The configuration of fields and page layouts should reflect the specific legal practice areas encountered in the implementation. Different legal departments may handle a variety of case types, such as litigation, compliance, contracts, or investigations. Customizing the Matter object and related records to meet these needs ensures a user-friendly experience and maximizes system adoption. ",
+    "url": "/pages/configuration/recon-setup.html#configuring-fields-and-screens-for-practice-areas",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#configuring-fields-and-screens-for-practice-areas"
+  },"274": {
+    "doc": "ReconMMS Setup",
+    "title": "Practice Area-Specific Field Configuration",
+    "content": ". | Litigation Fields: . | Create custom fields like “Case Type”, “Jurisdiction”, and “Court Date” to capture relevant litigation details. | Add picklist options for “Stage” (e.g., “Discovery,” “Pre-Trial,” “Trial”) and “Outcome” (e.g., “Settled,” “Dismissed,” “Judgment”). | . | Compliance Fields: . | Add fields such as “Regulation Type”, “Audit Date”, and “Compliance Status” to track compliance-related matters. | Use a picklist for “Compliance Category” (e.g., “Financial,” “Environmental,” “Data Privacy”) to standardize reporting. | . | Contract Management Fields: . | Include fields like “Contract Type”, “Effective Date”, and “Renewal Date” to manage contract details. | Add a checkbox field for “Requires Legal Review” to indicate contracts that need additional scrutiny. | . | Investigation Fields: . | Create fields such as “Investigation Type”, “Lead Investigator”, and “Evidence Status”. | Utilize a multi-select picklist for “Investigation Focus” (e.g., “Internal Misconduct,” “Fraud,” “Regulatory Breach”). | . | . ",
+    "url": "/pages/configuration/recon-setup.html#practice-area-specific-field-configuration",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#practice-area-specific-field-configuration"
+  },"275": {
+    "doc": "ReconMMS Setup",
+    "title": "Customizing Page Layouts and Record Types",
+    "content": ". | Record Types: Create distinct record types for different practice areas (e.g., “Litigation,” “Compliance,” “Contracts,” “Investigations”). This allows for tailored page layouts and field visibility. | Page Layouts: Customize the page layout for each record type to display only the fields relevant to that practice area. For instance, the “Litigation” layout could prioritize court details and hearing dates, while the “Compliance” layout could focus on audit and regulatory information. | Dynamic Forms: Leverage Salesforce Dynamic Forms to display specific fields based on the user’s role or the status of the Matter. This improves usability by reducing clutter and ensuring that users see only relevant information. | . Best Practice: Regularly review and update custom fields and page layouts as the organization’s needs evolve. Engage with end-users to gather feedback on what fields are most useful for their specific workflows. ",
+    "url": "/pages/configuration/recon-setup.html#customizing-page-layouts-and-record-types",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#customizing-page-layouts-and-record-types"
+  },"276": {
+    "doc": "ReconMMS Setup",
+    "title": "Automating Workflows with Salesforce Flow",
+    "content": "Salesforce Flow is the preferred tool for automating processes within Recon Matter Management. It enables the creation of complex, no-code workflows that reduce manual effort and streamline case management. ",
+    "url": "/pages/configuration/recon-setup.html#automating-workflows-with-salesforce-flow",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#automating-workflows-with-salesforce-flow"
+  },"277": {
+    "doc": "ReconMMS Setup",
+    "title": "Automating Task Creation",
+    "content": "Objective: Generate standard tasks based on the Matter Type when a new Matter record is created. Configuration Steps: . | Create a Record-Triggered Flow on the Matter object, set to run when a new record is created. | Add a Decision Element to branch the flow based on the Matter Type (e.g., Litigation, Compliance). | Use the Create Records element to generate tasks such as “Document Review” or “Initial Client Meeting,” setting default due dates based on the case timeline. | Assign tasks using the Matter Contact roles (e.g., “Lead Attorney,” “Paralegal”). | . Tip: Use custom labels for task subjects to maintain consistency across practice areas and improve task tracking. ",
+    "url": "/pages/configuration/recon-setup.html#automating-task-creation",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#automating-task-creation"
+  },"278": {
+    "doc": "ReconMMS Setup",
+    "title": "Automating Status Updates",
+    "content": "Objective: Automatically update related Matter Contacts when the Matter status changes. Configuration Steps: . | Set up a Record-Triggered Flow on the Matter object, triggered when the Status field is updated (e.g., “Closed”). | Use the Get Records element to fetch all related Matter Contacts. | Update each Matter Contact’s status to “Inactive” using the Update Records element. | . Recommendation: Use the “Last Modified By” field on the Matter Contact record to track who made the update, providing an audit trail for compliance purposes. ",
+    "url": "/pages/configuration/recon-setup.html#automating-status-updates",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#automating-status-updates"
+  },"279": {
+    "doc": "ReconMMS Setup",
+    "title": "Approval Processes for Key Decisions",
+    "content": "Objective: Implement an approval process for critical Matter stages, such as when a document needs legal review. Configuration Steps: . | Create an Approval Process on the Matter object with entry criteria based on the Matter Type and Status (e.g., “Pending Review”). | Use a Record-Triggered Flow to launch the approval process when the criteria are met. | Configure email notifications and reminders within the Flow to keep approvers informed. | . Best Practice: Regularly review approval processes to ensure they align with current legal procedures and policies. ",
+    "url": "/pages/configuration/recon-setup.html#approval-processes-for-key-decisions",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#approval-processes-for-key-decisions"
+  },"280": {
+    "doc": "ReconMMS Setup",
+    "title": "Building Reports and Dashboards",
+    "content": "Effective reporting is crucial for providing insights into matter status, task completion, and overall case management performance. Recon Matter Management leverages standard Salesforce reporting features, enabling admins to build powerful reports and dashboards. ",
+    "url": "/pages/configuration/recon-setup.html#building-reports-and-dashboards",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#building-reports-and-dashboards"
+  },"281": {
+    "doc": "ReconMMS Setup",
+    "title": "Creating Standard Reports",
+    "content": ". | Matter Status Report: . | Use the Matter object to create a summary report that shows the number of open, closed, and pending Matters, grouped by Matter Type. | Include filters for practice area, stage, and assigned attorney to provide actionable insights. | . | Task Completion Report: . | Create a report on the Task object to track task completion rates for each Matter Type. | Group tasks by status (e.g., “Completed,” “In Progress,” “Overdue”) and display the results in a bar chart. | . | Compliance Audit Report: . | Build a matrix report using the Compliance-related fields on the Matter object. | Highlight upcoming audits and their compliance status, using conditional formatting to flag overdue items. | . | . ",
+    "url": "/pages/configuration/recon-setup.html#creating-standard-reports",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#creating-standard-reports"
+  },"282": {
+    "doc": "ReconMMS Setup",
+    "title": "Designing Dashboards",
+    "content": ". | Matter Overview Dashboard: . | Include components like “Matters by Type,” “Open Matters by Practice Area,” and “Upcoming Court Dates.” | Use charts and tables to provide a quick visual summary of the legal department’s workload. | . | Task Management Dashboard: . | Display key metrics such as “Tasks Due This Week,” “Overdue Tasks,” and “Task Completion by User.” | Include filters for Matter Type and user role to allow for more detailed analysis. | . | Compliance Monitoring Dashboard: . | Include components showing “Compliance Audits by Status” and “Regulatory Issues by Practice Area.” | Use dynamic filters to allow legal managers to drill down into specific issues. | . | . Best Practice: Schedule reports and dashboards for regular distribution to key stakeholders, ensuring that the legal team stays informed and proactive. ",
+    "url": "/pages/configuration/recon-setup.html#designing-dashboards",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#designing-dashboards"
+  },"283": {
+    "doc": "ReconMMS Setup",
+    "title": "Summary",
+    "content": "Configuring Recon Matter Management effectively involves tailoring the system to reflect different legal practice areas, automating key workflows with Salesforce Flow, and building insightful reports and dashboards. This approach enhances the efficiency of legal teams, reduces manual work, and provides a comprehensive view of matter management activities. ",
+    "url": "/pages/configuration/recon-setup.html#summary",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#summary"
+  },"284": {
+    "doc": "ReconMMS Setup",
+    "title": "Key Takeaways:",
+    "content": ". | Customize fields and layouts based on legal practice areas for improved user experience. | Use Salesforce Flow for all automation needs, replacing manual processes and deprecated tools like Process Builder. | Design reports and dashboards to offer real-time insights, supporting informed decision-making. | . By following these best practices, the Recon Matter Management package can be configured to meet the specific needs of any legal department in a government agency. ",
+    "url": "/pages/configuration/recon-setup.html#key-takeaways",
+    
+    "relUrl": "/pages/configuration/recon-setup.html#key-takeaways"
+  },"285": {
     "doc": "ReconMMS Setup",
     "title": "ReconMMS Setup",
     "content": " ",
     "url": "/pages/configuration/recon-setup.html",
     
     "relUrl": "/pages/configuration/recon-setup.html"
-  },"258": {
+  },"286": {
     "doc": "Recon User (Contact)",
     "title": "Recon User (Recon_User__c) – Standard Contact Object",
     "content": " ",
     "url": "/pages/objects/recon-user.html#recon-user-recon_user__c--standard-contact-object",
     
     "relUrl": "/pages/objects/recon-user.html#recon-user-recon_user__c--standard-contact-object"
-  },"259": {
+  },"287": {
     "doc": "Recon User (Contact)",
     "title": "Overview",
     "content": "The Recon User field is a lookup field added to the standard Contact object in Salesforce. It creates a direct link between a Contact record and a User record within ReconMMS, enabling a more unified view of user-related information for end-users. ",
     "url": "/pages/objects/recon-user.html#overview",
     
     "relUrl": "/pages/objects/recon-user.html#overview"
-  },"260": {
+  },"288": {
     "doc": "Recon User (Contact)",
     "title": "Field Details",
     "content": "| Aspect | Description | . | API Name | Recon_User__c | . | Field Label | Recon User | . | Field Type | Lookup (User) | . | Parent Object | Contact (Standard) | . ",
     "url": "/pages/objects/recon-user.html#field-details",
     
     "relUrl": "/pages/objects/recon-user.html#field-details"
-  },"261": {
+  },"289": {
     "doc": "Recon User (Contact)",
     "title": "Field Properties",
     "content": "| Property | Value | . | Data Type | Lookup | . | Referenced Object | User | . | Required | No | . | Inline Help Text | Link between this Contact and a User Record | . ",
     "url": "/pages/objects/recon-user.html#field-properties",
     
     "relUrl": "/pages/objects/recon-user.html#field-properties"
-  },"262": {
+  },"290": {
     "doc": "Recon User (Contact)",
     "title": "Purpose",
     "content": "The Recon User field serves to: . | Link Contact records to User records | Provide a unified view of Contact and User data | Streamline access to information | Prevent confusion between Contact and User records | . ",
     "url": "/pages/objects/recon-user.html#purpose",
     
     "relUrl": "/pages/objects/recon-user.html#purpose"
-  },"263": {
+  },"291": {
     "doc": "Recon User (Contact)",
     "title": "Common Use Cases",
     "content": ". | User Association . | Linking Contacts to System Users | Managing user relationships | Contact-User synchronization | . | Access Management . | User identification | Permission management | System access control | . | Data Integration . | Contact-User data alignment | Information synchronization | Record association | . | . ",
     "url": "/pages/objects/recon-user.html#common-use-cases",
     
     "relUrl": "/pages/objects/recon-user.html#common-use-cases"
-  },"264": {
+  },"292": {
     "doc": "Recon User (Contact)",
     "title": "Best Practices",
     "content": ". | Field Population . | Verify User associations | Maintain accurate links | Regular verification | . | Data Management . | Keep associations current | Regular audits | Clean data maintenance | . | System Integration . | Proper relationship setup | Clear documentation | Regular validation | . | . ",
     "url": "/pages/objects/recon-user.html#best-practices",
     
     "relUrl": "/pages/objects/recon-user.html#best-practices"
-  },"265": {
+  },"293": {
     "doc": "Recon User (Contact)",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/recon-user.html#relationships",
     
     "relUrl": "/pages/objects/recon-user.html#relationships"
-  },"266": {
+  },"294": {
     "doc": "Recon User (Contact)",
     "title": "Parent Object",
     "content": ". | Contact (Standard Salesforce Object) | . ",
     "url": "/pages/objects/recon-user.html#parent-object",
     
     "relUrl": "/pages/objects/recon-user.html#parent-object"
-  },"267": {
+  },"295": {
     "doc": "Recon User (Contact)",
     "title": "Referenced Object",
     "content": ". | User (Standard Salesforce Object) | . ",
     "url": "/pages/objects/recon-user.html#referenced-object",
     
     "relUrl": "/pages/objects/recon-user.html#referenced-object"
-  },"268": {
+  },"296": {
     "doc": "Recon User (Contact)",
     "title": "Implementation Notes",
     "content": ". | Setup . | Added to standard Contact object | Configured for User lookup | Help text configured | . | Maintenance . | Regular relationship verification | User association updates | Data quality checks | . | Usage . | Clear association guidelines | Regular user validation | Relationship management | . | . ",
     "url": "/pages/objects/recon-user.html#implementation-notes",
     
     "relUrl": "/pages/objects/recon-user.html#implementation-notes"
-  },"269": {
+  },"297": {
     "doc": "Recon User (Contact)",
     "title": "Recon User (Contact)",
     "content": " ",
     "url": "/pages/objects/recon-user.html",
     
     "relUrl": "/pages/objects/recon-user.html"
-  },"270": {
+  },"298": {
     "doc": "Related Matter",
     "title": "Related Matter (Related_Matter__c)",
     "content": " ",
     "url": "/pages/objects/related-matter.html#related-matter-related_matter__c",
     
     "relUrl": "/pages/objects/related-matter.html#related-matter-related_matter__c"
-  },"271": {
+  },"299": {
     "doc": "Related Matter",
     "title": "Overview",
     "content": "The Related Matter object is designed to capture relationships and dependencies between different matters, providing a structured way to track connections such as parent-child relationships, appeal status, and related matters. ",
     "url": "/pages/objects/related-matter.html#overview",
     
     "relUrl": "/pages/objects/related-matter.html#overview"
-  },"272": {
+  },"300": {
     "doc": "Related Matter",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | Related_Matter__c | . | Label | Related Matter | . | Plural Label | Related Matters | . | Sharing Model | ControlledByParent | . ",
     "url": "/pages/objects/related-matter.html#object-details",
     
     "relUrl": "/pages/objects/related-matter.html#object-details"
-  },"273": {
+  },"301": {
     "doc": "Related Matter",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Related Matter Name | Name | Auto-number | Unique identifier (e.g., “RM-0001”) | . | End Date | End_Date__c | Date | Conclusion date of the relationship | . | Note | Note__c | Text Area | Contextual comments and information | . | Parent Matter | Parent_Matter__c | Master-Detail | Link to primary Matter record | . | Related Matter | Related_Matter__c | Lookup | Link to secondary Matter record | . | Related Matter Relation | Related_Matter_Relation__c | Lookup | Additional relationship context | . | Start Date | Start_Date__c | Date | Start date of the relationship | . | Type | Type__c | Picklist | Relationship type (Assessment, Case, Related Matter, Parent, Child, Appealed To, Appealed From) | . ",
     "url": "/pages/objects/related-matter.html#fields",
     
     "relUrl": "/pages/objects/related-matter.html#fields"
-  },"274": {
+  },"302": {
     "doc": "Related Matter",
     "title": "Key Features",
     "content": ". | Reports Enabled: Yes | Search Enabled: Yes | Sharing Model: ControlledByParent | All Standard Actions Enabled | Mobile-Ready: Supports both Large and Small form factors | . ",
     "url": "/pages/objects/related-matter.html#key-features",
     
     "relUrl": "/pages/objects/related-matter.html#key-features"
-  },"275": {
+  },"303": {
     "doc": "Related Matter",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/related-matter.html#relationships",
     
     "relUrl": "/pages/objects/related-matter.html#relationships"
-  },"276": {
+  },"304": {
     "doc": "Related Matter",
     "title": "Parent Objects",
     "content": ". | Matter (via Parent_Matter__c master-detail) | . ",
     "url": "/pages/objects/related-matter.html#parent-objects",
     
     "relUrl": "/pages/objects/related-matter.html#parent-objects"
-  },"277": {
+  },"305": {
     "doc": "Related Matter",
     "title": "Related Objects",
     "content": ". | Matter (via Related_Matter__c lookup) | Related Matter (via Related_Matter_Relation__c lookup) | . ",
     "url": "/pages/objects/related-matter.html#related-objects",
     
     "relUrl": "/pages/objects/related-matter.html#related-objects"
-  },"278": {
+  },"306": {
     "doc": "Related Matter",
     "title": "Common Use Cases",
     "content": ". | Appeal Management . | Tracking appealed matters | Managing appeal hierarchies | Documenting appeal relationships | . | Case Relations . | Connecting related cases | Managing parent-child relationships | Tracking case dependencies | . | Assessment Linkage . | Linking preliminary assessments | Connecting investigation results | Tracking matter progression | . | . ",
     "url": "/pages/objects/related-matter.html#common-use-cases",
     
     "relUrl": "/pages/objects/related-matter.html#common-use-cases"
-  },"279": {
+  },"307": {
     "doc": "Related Matter",
     "title": "Best Practices",
     "content": ". | Relationship Documentation . | Clear relationship type definition | Accurate timeline recording | Detailed note maintenance | . | Matter Linking . | Verify matter associations | Maintain relationship accuracy | Document relationship changes | . | Timeline Management . | Set precise relationship dates | Update status promptly | Maintain accurate records | . | . ",
     "url": "/pages/objects/related-matter.html#best-practices",
     
     "relUrl": "/pages/objects/related-matter.html#best-practices"
-  },"280": {
+  },"308": {
     "doc": "Related Matter",
     "title": "Related Matter",
     "content": " ",
     "url": "/pages/objects/related-matter.html",
     
     "relUrl": "/pages/objects/related-matter.html"
-  },"281": {
+  },"309": {
     "doc": "Remedy",
     "title": "Remedy (Remedy__c)",
     "content": " ",
     "url": "/pages/objects/remedy.html#remedy-remedy__c",
     
     "relUrl": "/pages/objects/remedy.html#remedy-remedy__c"
-  },"282": {
+  },"310": {
     "doc": "Remedy",
     "title": "Overview",
     "content": "The Remedy object tracks remedies related to legal matters, such as injunctive and monetary relief. It is configured with a master-detail relationship to the Matter object, allowing roll-ups and summarization of remedies at the matter level. ",
     "url": "/pages/objects/remedy.html#overview",
     
     "relUrl": "/pages/objects/remedy.html#overview"
-  },"283": {
+  },"311": {
     "doc": "Remedy",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | Remedy__c | . | Label | Remedy | . | Plural Label | Remedies | . | Sharing Model | ControlledByParent | . ",
     "url": "/pages/objects/remedy.html#object-details",
     
     "relUrl": "/pages/objects/remedy.html#object-details"
-  },"284": {
+  },"312": {
     "doc": "Remedy",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Remedy Name | Name | Auto-number | Unique identifier (e.g., “R-0001”) | . | Matter | Matter__c | Master-Detail | Link to Matter record | . | [Additional fields based on your implementation] |   |   |   | . ",
     "url": "/pages/objects/remedy.html#fields",
     
     "relUrl": "/pages/objects/remedy.html#fields"
-  },"285": {
+  },"313": {
     "doc": "Remedy",
     "title": "Key Features",
     "content": ". | Reports Enabled: Yes | Search Enabled: Yes | Sharing Model: ControlledByParent | Mobile Support: Both Large and Small form factors | Standard Actions: All enabled | . ",
     "url": "/pages/objects/remedy.html#key-features",
     
     "relUrl": "/pages/objects/remedy.html#key-features"
-  },"286": {
+  },"314": {
     "doc": "Remedy",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/remedy.html#relationships",
     
     "relUrl": "/pages/objects/remedy.html#relationships"
-  },"287": {
+  },"315": {
     "doc": "Remedy",
     "title": "Parent Objects",
     "content": ". | Matter (via Matter__c master-detail) | . ",
     "url": "/pages/objects/remedy.html#parent-objects",
     
     "relUrl": "/pages/objects/remedy.html#parent-objects"
-  },"288": {
+  },"316": {
     "doc": "Remedy",
     "title": "Common Use Cases",
     "content": ". | Relief Tracking . | Monetary relief recording | Injunctive relief documentation | Remedy management | . | Matter Resolution . | Outcome documentation | Settlement tracking | Resolution recording | . | Reporting . | Relief summaries | Matter outcomes | Resolution tracking | . | . ",
     "url": "/pages/objects/remedy.html#common-use-cases",
     
     "relUrl": "/pages/objects/remedy.html#common-use-cases"
-  },"289": {
+  },"317": {
     "doc": "Remedy",
     "title": "Best Practices",
     "content": ". | Remedy Documentation . | Clear description | Accurate categorization | Complete details | . | Matter Association . | Proper linking | Accurate relationship | Complete documentation | . | Data Management . | Regular updates | Accurate tracking | Proper classification | . | . ",
     "url": "/pages/objects/remedy.html#best-practices",
     
     "relUrl": "/pages/objects/remedy.html#best-practices"
-  },"290": {
+  },"318": {
     "doc": "Remedy",
     "title": "Remedy",
     "content": " ",
     "url": "/pages/objects/remedy.html",
     
     "relUrl": "/pages/objects/remedy.html"
-  },"291": {
+  },"319": {
     "doc": "Request",
     "title": "Request (Request__c)",
     "content": " ",
     "url": "/pages/objects/request.html#request-request__c",
     
     "relUrl": "/pages/objects/request.html#request-request__c"
-  },"292": {
+  },"320": {
     "doc": "Request",
     "title": "Overview",
     "content": "The Request object manages new requests to the legal department. It serves as an intake system for various types of legal requests including contract requests, legal issue reviews, or complaints created through external portals. After review, requests can be promoted into Investigations or Matters. ",
     "url": "/pages/objects/request.html#overview",
     
     "relUrl": "/pages/objects/request.html#overview"
-  },"293": {
+  },"321": {
     "doc": "Request",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | Request__c | . | Label | Request | . | Plural Label | Requests | . | Sharing Model | Private | . ",
     "url": "/pages/objects/request.html#object-details",
     
     "relUrl": "/pages/objects/request.html#object-details"
-  },"294": {
+  },"322": {
     "doc": "Request",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Request | Name | Text | Primary identifier for request | . | Description | Description__c | Text (255) | Details about the request | . | Received | Received__c | Date | When request was received | . | Stage | Stage__c | Picklist | Current stage of request | . | Status | Status__c | Picklist | Open (default) or Closed | . | Type | Type__c | Picklist | Request categorization | . ",
     "url": "/pages/objects/request.html#fields",
     
     "relUrl": "/pages/objects/request.html#fields"
-  },"295": {
+  },"323": {
     "doc": "Request",
     "title": "Key Features",
     "content": ". | Activities Enabled: Yes | Reporting: Supported | Bulk API: Enabled | Streaming API: Enabled | Search: Custom search layout | Chatter Feed: Disabled | History Tracking: Disabled | . ",
     "url": "/pages/objects/request.html#key-features",
     
     "relUrl": "/pages/objects/request.html#key-features"
-  },"296": {
+  },"324": {
     "doc": "Request",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/request.html#relationships",
     
     "relUrl": "/pages/objects/request.html#relationships"
-  },"297": {
+  },"325": {
     "doc": "Request",
     "title": "Child Objects",
     "content": ". | Matter (Matter__c) | Investigation (Investigation__c) | . ",
     "url": "/pages/objects/request.html#child-objects",
     
     "relUrl": "/pages/objects/request.html#child-objects"
-  },"298": {
+  },"326": {
     "doc": "Request",
     "title": "Common Use Cases",
     "content": ". | Legal Request Intake . | Initial request processing | Request categorization | Initial assessment | . | Matter Creation . | Request to matter conversion | Investigation initiation | Case tracking | . | Request Management . | Status tracking | Stage progression | Request routing | . | . ",
     "url": "/pages/objects/request.html#common-use-cases",
     
     "relUrl": "/pages/objects/request.html#common-use-cases"
-  },"299": {
+  },"327": {
     "doc": "Request",
     "title": "Best Practices",
     "content": ". | Request Processing . | Prompt initial review | Accurate categorization | Complete documentation | . | Status Management . | Regular status updates | Clear stage progression | Timely closure | . | Data Quality . | Detailed descriptions | Accurate received dates | Proper type classification | . | . ",
     "url": "/pages/objects/request.html#best-practices",
     
     "relUrl": "/pages/objects/request.html#best-practices"
-  },"300": {
+  },"328": {
     "doc": "Request",
     "title": "Request",
     "content": " ",
     "url": "/pages/objects/request.html",
     
     "relUrl": "/pages/objects/request.html"
-  },"301": {
+  },"329": {
     "doc": "Salesforce Basics",
     "title": "Salesforce Configuration Guide for First-Time Administrators",
     "content": "Welcome to the Salesforce ecosystem! This guide is designed to provide you, a developer with moderate technical experience, with an introductory understanding of how to navigate and set up a Salesforce environment as an administrator. By the end of this guide, you will be familiar with the core concepts of Salesforce, its security structure, and essential resources to deepen your expertise. ",
     "url": "/pages/configuration/salesforce-basics.html#salesforce-configuration-guide-for-first-time-administrators",
     
     "relUrl": "/pages/configuration/salesforce-basics.html#salesforce-configuration-guide-for-first-time-administrators"
-  },"302": {
+  },"330": {
     "doc": "Salesforce Basics",
     "title": "1. Introduction to Salesforce",
     "content": "Salesforce is a cloud-based platform known for its robust CRM capabilities, allowing businesses to streamline customer interactions, automate workflows, and harness data insights. Central to its flexibility is the ability to customize nearly every aspect of its system to match business needs. A Salesforce Organization (or Org) is your unique instance of Salesforce, where all data, customizations, and configurations specific to your company reside. This isolated environment ensures that your workflows and data remain distinct from others while benefiting from Salesforce’s global infrastructure and continuous innovation. ",
     "url": "/pages/configuration/salesforce-basics.html#1-introduction-to-salesforce",
     
     "relUrl": "/pages/configuration/salesforce-basics.html#1-introduction-to-salesforce"
-  },"303": {
+  },"331": {
     "doc": "Salesforce Basics",
     "title": "2. Understanding Apps in Salesforce",
     "content": "An App in Salesforce is a logical collection of tabs, objects, and functionalities grouped to serve specific business processes. Standard apps such as Sales and Service provide predefined capabilities for common business operations. However, the power of Salesforce lies in its customization—users can create custom apps that align with specific organizational needs. The App Launcher acts as your gateway to switch between apps and organize components seamlessly. Understanding how apps are structured will help you better integrate custom objects and workflows into user-friendly applications. ",
     "url": "/pages/configuration/salesforce-basics.html#2-understanding-apps-in-salesforce",
     
     "relUrl": "/pages/configuration/salesforce-basics.html#2-understanding-apps-in-salesforce"
-  },"304": {
+  },"332": {
     "doc": "Salesforce Basics",
     "title": "3. Salesforce Core Concepts",
     "content": "Objects are the building blocks of Salesforce data storage. Standard Objects like Accounts, Contacts, and Cases come pre-packaged and cater to common CRM functions. Custom Objects, on the other hand, are defined by users to address specific data storage needs that go beyond standard functionalities. Objects are composed of fields, which come in various types such as text, number, and picklist fields to cater to different data requirements. Page Layouts determine how data appears on a user’s screen, allowing you to customize field placement and related lists for an optimized view. Lightning Record Pages, crafted through the Lightning App Builder, enable dynamic user interfaces by combining different components and ensuring a tailored user experience. ",
     "url": "/pages/configuration/salesforce-basics.html#3-salesforce-core-concepts",
     
     "relUrl": "/pages/configuration/salesforce-basics.html#3-salesforce-core-concepts"
-  },"305": {
+  },"333": {
     "doc": "Salesforce Basics",
     "title": "4. Security Essentials",
     "content": "Security in Salesforce is a multifaceted system designed to control access at different levels. Profiles play a fundamental role in this structure by defining baseline permissions for user groups, including what they can view or edit. However, modern practices prefer Permission Sets for augmenting user permissions without altering Profiles, offering greater flexibility and minimizing the need to create numerous custom Profiles. For group-level access control, User Groups are used to bundle users with shared permissions or data access. Sharing Rules further enhance data access by extending permissions beyond the defaults set by organization-wide sharing settings, making them vital for ensuring the right teams have access to necessary records without compromising data security. ",
     "url": "/pages/configuration/salesforce-basics.html#4-security-essentials",
     
     "relUrl": "/pages/configuration/salesforce-basics.html#4-security-essentials"
-  },"306": {
+  },"334": {
     "doc": "Salesforce Basics",
     "title": "5. Important Resources and Learning Aids",
     "content": "Staying informed and continuously learning is crucial for Salesforce administrators. Below are valuable resources to aid in your journey: . | Salesforce Official Documentation: This comprehensive source offers deep insights and practical guides for every aspect of Salesforce configuration. Check out Salesforce Admin Documentation. | YouTube Tutorials: Numerous channels provide in-depth visual explanations and walkthroughs for Salesforce topics. Look for reputable Salesforce admin or developer channels to enhance your knowledge. | Community Forums: Engage with the Salesforce community on forums like the Trailblazer Community or Stack Exchange, where you can ask questions, find solutions, and share insights. | . ",
     "url": "/pages/configuration/salesforce-basics.html#5-important-resources-and-learning-aids",
     
     "relUrl": "/pages/configuration/salesforce-basics.html#5-important-resources-and-learning-aids"
-  },"307": {
+  },"335": {
     "doc": "Salesforce Basics",
     "title": "Salesforce Trailhead",
     "content": "A highlight of your learning journey should be Salesforce Trailhead. This free, interactive platform offers a hands-on learning experience through modules and projects that cover various topics, from basics to advanced configuration. Trailhead not only provides guided learning paths but also allows you to create free developer Orgs for practical testing. To get started, visit Trailhead, create an account, and explore beginner modules such as Salesforce Platform Basics or Data Modeling. With Trailhead, you can experiment, build, and refine your skills without risk to a live environment. With this guide, you are set to begin your journey as a Salesforce administrator. Dive into the platform, experiment with its customizable features, and explore the endless learning opportunities available. ",
     "url": "/pages/configuration/salesforce-basics.html#salesforce-trailhead",
     
     "relUrl": "/pages/configuration/salesforce-basics.html#salesforce-trailhead"
-  },"308": {
+  },"336": {
     "doc": "Salesforce Basics",
     "title": "Salesforce Basics",
     "content": " ",
     "url": "/pages/configuration/salesforce-basics.html",
     
     "relUrl": "/pages/configuration/salesforce-basics.html"
-  },"309": {
+  },"337": {
     "doc": "Stage Activity",
     "title": "Stage Activity (Stage_Activity__c)",
     "content": " ",
     "url": "/pages/objects/stage-activity.html#stage-activity-stage_activity__c",
     
     "relUrl": "/pages/objects/stage-activity.html#stage-activity-stage_activity__c"
-  },"310": {
+  },"338": {
     "doc": "Stage Activity",
     "title": "Overview",
     "content": "The Stage Activity object tracks specific activities or milestones within the lifecycle of a legal matter. Configured as a master-detail relationship with the Matter object, it allows for the aggregation of activities under a single matter, aiding in structured case tracking and workflow management. ",
     "url": "/pages/objects/stage-activity.html#overview",
     
     "relUrl": "/pages/objects/stage-activity.html#overview"
-  },"311": {
+  },"339": {
     "doc": "Stage Activity",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | Stage_Activity__c | . | Label | Stage Activity | . | Plural Label | Stage Activities | . | Sharing Model | ControlledByParent | . ",
     "url": "/pages/objects/stage-activity.html#object-details",
     
     "relUrl": "/pages/objects/stage-activity.html#object-details"
-  },"312": {
+  },"340": {
     "doc": "Stage Activity",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Stage Activity Name | Name | Auto-number | Unique identifier (e.g., “SA-0001”) | . | Matter | Matter__c | Master-Detail | Link to Matter record | . | [Additional fields based on your implementation] |   |   |   | . ",
     "url": "/pages/objects/stage-activity.html#fields",
     
     "relUrl": "/pages/objects/stage-activity.html#fields"
-  },"313": {
+  },"341": {
     "doc": "Stage Activity",
     "title": "Key Features",
     "content": ". | Reports Enabled: Yes | Search Enabled: Yes | Sharing Model: ControlledByParent | Supports both Large and Small form factors | Full action support (Accept, Edit, Delete, etc.) | . ",
     "url": "/pages/objects/stage-activity.html#key-features",
     
     "relUrl": "/pages/objects/stage-activity.html#key-features"
-  },"314": {
+  },"342": {
     "doc": "Stage Activity",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/stage-activity.html#relationships",
     
     "relUrl": "/pages/objects/stage-activity.html#relationships"
-  },"315": {
+  },"343": {
     "doc": "Stage Activity",
     "title": "Parent Objects",
     "content": ". | Matter (via Matter__c master-detail) | . ",
     "url": "/pages/objects/stage-activity.html#parent-objects",
     
     "relUrl": "/pages/objects/stage-activity.html#parent-objects"
-  },"316": {
+  },"344": {
     "doc": "Stage Activity",
     "title": "Common Use Cases",
     "content": ". | Milestone Tracking . | Recording key matter stages | Tracking progress points | Managing deadlines | . | Activity Management . | Documenting stage-specific activities | Tracking completion status | Managing activity sequences | . | Workflow Support . | Supporting stage transitions | Managing activity dependencies | Tracking process compliance | . | . ",
     "url": "/pages/objects/stage-activity.html#common-use-cases",
     
     "relUrl": "/pages/objects/stage-activity.html#common-use-cases"
-  },"317": {
+  },"345": {
     "doc": "Stage Activity",
     "title": "Best Practices",
     "content": ". | Activity Documentation . | Clear activity descriptions | Accurate timeline recording | Proper stage categorization | . | Progress Tracking . | Regular status updates | Milestone documentation | Timeline maintenance | . | . ",
     "url": "/pages/objects/stage-activity.html#best-practices",
     
     "relUrl": "/pages/objects/stage-activity.html#best-practices"
-  },"318": {
+  },"346": {
     "doc": "Stage Activity",
     "title": "Stage Activity",
     "content": " ",
     "url": "/pages/objects/stage-activity.html",
     
     "relUrl": "/pages/objects/stage-activity.html"
-  },"319": {
+  },"347": {
     "doc": "State",
     "title": "State (State__c)",
     "content": " ",
     "url": "/pages/objects/state.html#state-state__c",
     
     "relUrl": "/pages/objects/state.html#state-state__c"
-  },"320": {
+  },"348": {
     "doc": "State",
     "title": "Overview",
     "content": "The State object captures state-level information that supports hierarchical geographic data across cities, counties, and districts. It serves as a foundational element in the geographic data model. ",
     "url": "/pages/objects/state.html#overview",
     
     "relUrl": "/pages/objects/state.html#overview"
-  },"321": {
+  },"349": {
     "doc": "State",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | State__c | . | Label | State | . | Plural Label | States | . | Sharing Model | ReadWrite | . ",
     "url": "/pages/objects/state.html#object-details",
     
     "relUrl": "/pages/objects/state.html#object-details"
-  },"322": {
+  },"350": {
     "doc": "State",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Name | Name | Text | State name | . | [Additional fields based on your implementation] |   |   |   | . ",
     "url": "/pages/objects/state.html#fields",
     
     "relUrl": "/pages/objects/state.html#fields"
-  },"323": {
+  },"351": {
     "doc": "State",
     "title": "Key Features",
     "content": ". | Reports Enabled: Yes | Search Enabled: Yes | Sharing Model: ReadWrite | Mobile Support: Large and Small form factors | Standard Actions: All enabled | . ",
     "url": "/pages/objects/state.html#key-features",
     
     "relUrl": "/pages/objects/state.html#key-features"
-  },"324": {
+  },"352": {
     "doc": "State",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/state.html#relationships",
     
     "relUrl": "/pages/objects/state.html#relationships"
-  },"325": {
+  },"353": {
     "doc": "State",
     "title": "Child Objects",
     "content": ". | Cities (via State__c) | Counties (via State__c) | Districts (via State__c) | . ",
     "url": "/pages/objects/state.html#child-objects",
     
     "relUrl": "/pages/objects/state.html#child-objects"
-  },"326": {
+  },"354": {
     "doc": "State",
     "title": "Common Use Cases",
     "content": ". | Geographic Hierarchy . | Central state record | Geographic organization | Location management | . | Jurisdictional Management . | State-level jurisdiction | Administrative boundaries | Legal territory management | . | Data Organization . | Location standardization | Address management | Regional classification | . | . ",
     "url": "/pages/objects/state.html#common-use-cases",
     
     "relUrl": "/pages/objects/state.html#common-use-cases"
-  },"327": {
+  },"355": {
     "doc": "State",
     "title": "Best Practices",
     "content": ". | State Management . | Standard naming conventions | Complete record maintenance | Regular verification | . | Relationship Management . | Proper child object linkage | Hierarchy maintenance | Regular validation | . | Data Quality . | Standardized formats | Regular updates | Accurate relationships | . | . ",
     "url": "/pages/objects/state.html#best-practices",
     
     "relUrl": "/pages/objects/state.html#best-practices"
-  },"328": {
+  },"356": {
     "doc": "State",
     "title": "State",
     "content": " ",
     "url": "/pages/objects/state.html",
     
     "relUrl": "/pages/objects/state.html"
-  },"329": {
+  },"357": {
     "doc": "Statute",
     "title": "Statute (Statute__c)",
     "content": " ",
     "url": "/pages/objects/statute.html#statute-statute__c",
     
     "relUrl": "/pages/objects/statute.html#statute-statute__c"
-  },"330": {
+  },"358": {
     "doc": "Statute",
     "title": "Overview",
     "content": "The Statute object manages statutes and regulations related to legal matters, investigations, or requests. It can be configured as a master-detail or lookup relationship with other objects, making it adaptable for various use cases involving regulatory or legal code tracking. ",
     "url": "/pages/objects/statute.html#overview",
     
     "relUrl": "/pages/objects/statute.html#overview"
-  },"331": {
+  },"359": {
     "doc": "Statute",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | Statute__c | . | Label | Statute | . | Plural Label | Statutes | . | Sharing Model | ReadWrite | . ",
     "url": "/pages/objects/statute.html#object-details",
     
     "relUrl": "/pages/objects/statute.html#object-details"
-  },"332": {
+  },"360": {
     "doc": "Statute",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Statute Name | Name | Auto-number | Unique identifier (e.g., “MS-0001”) | . | [Additional fields based on your implementation] |   |   |   | . ",
     "url": "/pages/objects/statute.html#fields",
     
     "relUrl": "/pages/objects/statute.html#fields"
-  },"333": {
+  },"361": {
     "doc": "Statute",
     "title": "Key Features",
     "content": ". | Reports Enabled: Yes | Search Enabled: Yes | Sharing Model: ReadWrite | Mobile Support: Large and Small form factors | Standard Actions: All enabled | . ",
     "url": "/pages/objects/statute.html#key-features",
     
     "relUrl": "/pages/objects/statute.html#key-features"
-  },"334": {
+  },"362": {
     "doc": "Statute",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/statute.html#relationships",
     
     "relUrl": "/pages/objects/statute.html#relationships"
-  },"335": {
+  },"363": {
     "doc": "Statute",
     "title": "Flexible Relationships",
     "content": "Can be configured as master-detail or lookup to: . | Matter | Investigation | Request | . ",
     "url": "/pages/objects/statute.html#flexible-relationships",
     
     "relUrl": "/pages/objects/statute.html#flexible-relationships"
-  },"336": {
+  },"364": {
     "doc": "Statute",
     "title": "Common Use Cases",
     "content": ". | Legal Reference . | Statute tracking | Regulatory compliance | Legal code management | . | Matter Association . | Relevant statute linkage | Legal basis documentation | Compliance tracking | . | Investigation Support . | Regulatory framework | Legal basis | Compliance documentation | . | . ",
     "url": "/pages/objects/statute.html#common-use-cases",
     
     "relUrl": "/pages/objects/statute.html#common-use-cases"
-  },"337": {
+  },"365": {
     "doc": "Statute",
     "title": "Best Practices",
     "content": ". | Statute Management . | Accurate statute recording | Regular updates | Complete documentation | . | Relationship Configuration . | Appropriate relationship type | Clear associations | Proper hierarchy | . | Data Quality . | Regular verification | Complete information | Accurate references | . | . ",
     "url": "/pages/objects/statute.html#best-practices",
     
     "relUrl": "/pages/objects/statute.html#best-practices"
-  },"338": {
+  },"366": {
     "doc": "Statute",
     "title": "Statute",
     "content": " ",
     "url": "/pages/objects/statute.html",
     
     "relUrl": "/pages/objects/statute.html"
-  },"339": {
+  },"367": {
     "doc": "Work Group",
     "title": "Work Group (Work_Group__c)",
     "content": " ",
     "url": "/pages/objects/work-group.html#work-group-work_group__c",
     
     "relUrl": "/pages/objects/work-group.html#work-group-work_group__c"
-  },"340": {
+  },"368": {
     "doc": "Work Group",
     "title": "Overview",
     "content": "The Work Group object represents groups assigned to a Matter or other detail records. It is often used to implement sharing rules, enabling associations between the name of a work group and a public group to manage access and permissions effectively. ",
     "url": "/pages/objects/work-group.html#overview",
     
     "relUrl": "/pages/objects/work-group.html#overview"
-  },"341": {
+  },"369": {
     "doc": "Work Group",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | Work_Group__c | . | Label | Work Group | . | Plural Label | Work Groups | . | Sharing Model | ReadWrite | . ",
     "url": "/pages/objects/work-group.html#object-details",
     
     "relUrl": "/pages/objects/work-group.html#object-details"
-  },"342": {
+  },"370": {
     "doc": "Work Group",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Work Group Name | Name | Auto-number | Unique identifier (e.g., “WG-0001”) | . | Matter | Matter__c | Lookup | Link to Matter record | . | Permission | Permission__c | Picklist | Access level (Read, Edit, No Access) | . | [Additional fields based on your implementation] |   |   |   | . ",
     "url": "/pages/objects/work-group.html#fields",
     
     "relUrl": "/pages/objects/work-group.html#fields"
-  },"343": {
+  },"371": {
     "doc": "Work Group",
     "title": "Key Features",
     "content": ". | Reports Enabled: Yes | Search Disabled: Yes | Sharing Model: ReadWrite | Mobile Support: Both Large and Small form factors | Full action support | . ",
     "url": "/pages/objects/work-group.html#key-features",
     
     "relUrl": "/pages/objects/work-group.html#key-features"
-  },"344": {
+  },"372": {
     "doc": "Work Group",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/work-group.html#relationships",
     
     "relUrl": "/pages/objects/work-group.html#relationships"
-  },"345": {
+  },"373": {
     "doc": "Work Group",
     "title": "Related Objects",
     "content": ". | Matter (via Matter__c lookup) | . ",
     "url": "/pages/objects/work-group.html#related-objects",
     
     "relUrl": "/pages/objects/work-group.html#related-objects"
-  },"346": {
+  },"374": {
     "doc": "Work Group",
     "title": "Common Use Cases",
     "content": ". | Access Management . | Managing team access | Controlling record visibility | Implementing sharing rules | . | Team Organization . | Grouping team members | Managing work assignments | Organizing matter access | . | Permission Control . | Setting access levels | Managing group permissions | Controlling data visibility | . | . ",
     "url": "/pages/objects/work-group.html#common-use-cases",
     
     "relUrl": "/pages/objects/work-group.html#common-use-cases"
-  },"347": {
+  },"375": {
     "doc": "Work Group",
     "title": "Best Practices",
     "content": ". | Group Management . | Clear group naming conventions | Regular permission reviews | Accurate group maintenance | . | Access Control . | Regular permission audits | Clear documentation | Consistent application | . | Team Structure . | Logical group organization | Clear hierarchy | Regular updates | . | . ",
     "url": "/pages/objects/work-group.html#best-practices",
     
     "relUrl": "/pages/objects/work-group.html#best-practices"
-  },"348": {
+  },"376": {
     "doc": "Work Group",
     "title": "Work Group",
     "content": " ",
     "url": "/pages/objects/work-group.html",
     
     "relUrl": "/pages/objects/work-group.html"
-  },"349": {
+  },"377": {
     "doc": "Workflow System",
     "title": "Recon Workflow System Documentation",
     "content": " ",
     "url": "/pages/workflow-engine.html#recon-workflow-system-documentation",
     
     "relUrl": "/pages/workflow-engine.html#recon-workflow-system-documentation"
-  },"350": {
+  },"378": {
     "doc": "Workflow System",
     "title": "Executive Summary",
     "content": "The Recon Workflow System is a core component of Recon Matter Management, enabling streamlined management and automation of workflows within Salesforce. This system leverages Workflow__c, Workflow_Template__c, and Workflow_RecordType__c objects, along with specialized flows, to handle various stages of workflow approvals, record updates, and compliance management. This system provides users with seamless options for initiating, tracking, and completing workflow actions based on Matter updates or approvals. With a focus on compliance, efficiency, and ease of use, the Recon Workflow System automates key actions to ensure users have up-to-date, accurate, and actionable information. ",
     "url": "/pages/workflow-engine.html#executive-summary",
     
     "relUrl": "/pages/workflow-engine.html#executive-summary"
-  },"351": {
+  },"379": {
     "doc": "Workflow System",
     "title": "Sample Use Cases",
     "content": " ",
     "url": "/pages/workflow-engine.html#sample-use-cases",
     
     "relUrl": "/pages/workflow-engine.html#sample-use-cases"
-  },"352": {
+  },"380": {
     "doc": "Workflow System",
     "title": "Use Case 1: Automatic Stage Advancement Upon Matter Approval",
     "content": "Scenario: A legal team member needs a Matter’s stage to advance automatically upon approval. Workflow System in Action: . | Workflow - After Save flow verifies the updated status and automatically adjusts the Matter stage to “Preliminary Inquiry” or “Research and Writing” based on defined parameters. | Workflow Selection Screen flow filters relevant Workflow Templates for the user based on the Matter’s record type, guiding users through selecting and submitting the appropriate approval. | . Outcome: Automation of stage advancement reduces manual updates, ensuring the Matter reflects the latest approved stage without manual intervention. ",
     "url": "/pages/workflow-engine.html#use-case-1-automatic-stage-advancement-upon-matter-approval",
     
     "relUrl": "/pages/workflow-engine.html#use-case-1-automatic-stage-advancement-upon-matter-approval"
-  },"353": {
+  },"381": {
     "doc": "Workflow System",
     "title": "Use Case 2: Streamlined Record-Type Specific Workflow Selection",
     "content": "Scenario: An administrator configures workflows for specific Matter record types to guide users toward the correct templates. Workflow System in Action: . | Workflow Selection Screen flow dynamically filters Workflow Templates based on the record type of the Matter, presenting only the relevant workflow options. | Get_Workflow_Record_Type action filters templates to include only those associated with the selected Matter type. | . Outcome: Users see only the workflows applicable to their Matter’s record type, reducing complexity and guiding them toward the correct workflow for their cases. ",
     "url": "/pages/workflow-engine.html#use-case-2-streamlined-record-type-specific-workflow-selection",
     
     "relUrl": "/pages/workflow-engine.html#use-case-2-streamlined-record-type-specific-workflow-selection"
-  },"354": {
+  },"382": {
     "doc": "Workflow System",
     "title": "Use Case 3: Automated Handling of Criminal Matter Approvals",
     "content": "Scenario: Certain Matters categorized as criminal require additional verification steps and limited workflow options. Workflow System in Action: . | Workflow - After Save flow evaluates Matter parameters and directs records to a criminal-specific workflow if Section__c is “CRM”. | Decision nodes like Check_if_Criminal_Matter and Check_if_Matter_is_Criminal_and_not_a_Record_Modification ensure appropriate workflows are triggered and prevent non-compliant modifications. | . Outcome: Automated validation and selection for criminal matters guide users through approved paths, maintaining workflow integrity and compliance. ",
     "url": "/pages/workflow-engine.html#use-case-3-automated-handling-of-criminal-matter-approvals",
     
     "relUrl": "/pages/workflow-engine.html#use-case-3-automated-handling-of-criminal-matter-approvals"
-  },"355": {
+  },"383": {
     "doc": "Workflow System",
     "title": "Flow Summaries",
     "content": " ",
     "url": "/pages/workflow-engine.html#flow-summaries",
     
     "relUrl": "/pages/workflow-engine.html#flow-summaries"
-  },"356": {
+  },"384": {
     "doc": "Workflow System",
     "title": "Workflow - After Save",
     "content": "Purpose: Automates updates and stage transitions upon saving a Workflow__c record. Functionality: This flow uses decision logic to evaluate updates (e.g., status changes, parameter updates), directing actions like advancing the Matter stage to “Preliminary Inquiry” or “Research and Writing” as conditions are met. ",
     "url": "/pages/workflow-engine.html#workflow---after-save",
     
     "relUrl": "/pages/workflow-engine.html#workflow---after-save"
-  },"357": {
+  },"385": {
     "doc": "Workflow System",
     "title": "Workflow Selection Screen",
     "content": "Purpose: Presents users with the Workflow Template options filtered by the Matter’s record type. Functionality: This flow dynamically filters templates based on the record type and checks if a workflow template is active, streamlining the selection process. It also handles submission of new workflow records for approval, manages error handling, and updates Matters where applicable. ",
     "url": "/pages/workflow-engine.html#workflow-selection-screen",
     
     "relUrl": "/pages/workflow-engine.html#workflow-selection-screen"
-  },"358": {
+  },"386": {
     "doc": "Workflow System",
     "title": "Key Decisions and Actions",
     "content": ". | Check for Next Action: Determines appropriate stage progression (e.g., “Preliminary Inquiry,” “Research and Writing”) based on Matter parameters. | Status Check: Triggers workflows when Matter status is approved. | Assign Workflow Values: Sets values (e.g., Workflow_Template__c, Initial_Approver__c) to new workflow records, supporting approval actions. | Error Handling: Redirects to error screens and deletes orphan workflow records if submission fails, ensuring data integrity. | Get Workflow Record Type: Filters workflow templates by record type to guide users to relevant workflows. | . ",
     "url": "/pages/workflow-engine.html#key-decisions-and-actions",
     
     "relUrl": "/pages/workflow-engine.html#key-decisions-and-actions"
-  },"359": {
+  },"387": {
     "doc": "Workflow System",
     "title": "Objects Overview",
     "content": ". | Workflow__c: Core workflow object managing status, approvers, and parameters for tracking workflow progress. | Workflow_Template__c: Template library for available workflows, filtered by record type to control user selection and guide approval actions. | Workflow_RecordType__c: Categorizes workflows by Matter record type, enabling workflow customization for each Matter type and ensuring workflows are relevant to the user’s case. | . ",
     "url": "/pages/workflow-engine.html#objects-overview",
     
     "relUrl": "/pages/workflow-engine.html#objects-overview"
-  },"360": {
+  },"388": {
     "doc": "Workflow System",
     "title": "System Components",
     "content": ". | Approval Submissions: The Workflow Selection Screen flow submits workflows for approval, handling both Matter updates and tracking associated approvals. | Dynamic Filtering: Workflow Templates are filtered by record type to ensure that users only see workflows relevant to their Matter type. | Error Management: Integrated error screens in the Workflow Selection Screen flow notify users of any issues and ensure that incomplete records are cleaned up. | . This documentation provides a cohesive overview of the Recon Workflow System, detailing its purpose, structure, and use cases to support legal workflow management within Recon Matter Management. ",
     "url": "/pages/workflow-engine.html#system-components",
     
     "relUrl": "/pages/workflow-engine.html#system-components"
-  },"361": {
+  },"389": {
     "doc": "Workflow System",
     "title": "Workflow System",
     "content": " ",
     "url": "/pages/workflow-engine.html",
     
     "relUrl": "/pages/workflow-engine.html"
-  },"362": {
+  },"390": {
     "doc": "Workflow Record Type",
     "title": "Workflow Record Type (Workflow_Record_Type__c)",
     "content": " ",
     "url": "/pages/objects/workflow-record-type.html#workflow-record-type-workflow_record_type__c",
     
     "relUrl": "/pages/objects/workflow-record-type.html#workflow-record-type-workflow_record_type__c"
-  },"363": {
+  },"391": {
     "doc": "Workflow Record Type",
     "title": "Overview",
     "content": "The Workflow Record Type object defines record types available for workflows, specifying the conditions and templates associated with each workflow type. It helps manage the relationship between record types and workflow templates. ",
     "url": "/pages/objects/workflow-record-type.html#overview",
     
     "relUrl": "/pages/objects/workflow-record-type.html#overview"
-  },"364": {
+  },"392": {
     "doc": "Workflow Record Type",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | Workflow_Record_Type__c | . | Label | Workflow Record Type | . | Plural Label | Workflow Record Types | . | Sharing Model | [Your sharing model] | . ",
     "url": "/pages/objects/workflow-record-type.html#object-details",
     
     "relUrl": "/pages/objects/workflow-record-type.html#object-details"
-  },"365": {
+  },"393": {
     "doc": "Workflow Record Type",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Record Type Developer Name | Record_Type_Developer_Name__c | Text | Developer name reference | . | Workflow Name | Workflow_Name__c | Formula | Template name reference | . | Workflow Template | Workflow_Template__c | Master-Detail | Link to workflow template | . ",
     "url": "/pages/objects/workflow-record-type.html#fields",
     
     "relUrl": "/pages/objects/workflow-record-type.html#fields"
-  },"366": {
+  },"394": {
     "doc": "Workflow Record Type",
     "title": "Key Features",
     "content": ". | Record Type Management | Template Association | Developer Name Reference | Formula Field Support | . ",
     "url": "/pages/objects/workflow-record-type.html#key-features",
     
     "relUrl": "/pages/objects/workflow-record-type.html#key-features"
-  },"367": {
+  },"395": {
     "doc": "Workflow Record Type",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/workflow-record-type.html#relationships",
     
     "relUrl": "/pages/objects/workflow-record-type.html#relationships"
-  },"368": {
+  },"396": {
     "doc": "Workflow Record Type",
     "title": "Parent Objects",
     "content": ". | Workflow Template (via Workflow_Template__c) | . ",
     "url": "/pages/objects/workflow-record-type.html#parent-objects",
     
     "relUrl": "/pages/objects/workflow-record-type.html#parent-objects"
-  },"369": {
+  },"397": {
     "doc": "Workflow Record Type",
     "title": "Common Use Cases",
     "content": ". | Record Type Configuration . | Template assignment | Type-specific workflows | Process configuration | . | Workflow Management . | Type-based routing | Process configuration | Template association | . | Process Control . | Access management | Process limitation | Type-specific behavior | . | . ",
     "url": "/pages/objects/workflow-record-type.html#common-use-cases",
     
     "relUrl": "/pages/objects/workflow-record-type.html#common-use-cases"
-  },"370": {
+  },"398": {
     "doc": "Workflow Record Type",
     "title": "Best Practices",
     "content": ". | Record Type Setup . | Clear naming conventions | Proper template association | Complete documentation | . | Template Management . | Accurate associations | Regular verification | Proper configuration | . | Maintenance . | Regular reviews | Update documentation | Verify associations | . | . ",
     "url": "/pages/objects/workflow-record-type.html#best-practices",
     
     "relUrl": "/pages/objects/workflow-record-type.html#best-practices"
-  },"371": {
+  },"399": {
     "doc": "Workflow Record Type",
     "title": "Workflow Record Type",
     "content": " ",
     "url": "/pages/objects/workflow-record-type.html",
     
     "relUrl": "/pages/objects/workflow-record-type.html"
-  },"372": {
+  },"400": {
     "doc": "Workflow Template",
     "title": "Workflow Template (Workflow_Template__c)",
     "content": " ",
     "url": "/pages/objects/workflow-template.html#workflow-template-workflow_template__c",
     
     "relUrl": "/pages/objects/workflow-template.html#workflow-template-workflow_template__c"
-  },"373": {
+  },"401": {
     "doc": "Workflow Template",
     "title": "Overview",
     "content": "The Workflow Template object establishes a framework for creating workflows with predefined conditions, statuses, and required actions. It serves as a blueprint for workflow creation and management. ",
     "url": "/pages/objects/workflow-template.html#overview",
     
     "relUrl": "/pages/objects/workflow-template.html#overview"
-  },"374": {
+  },"402": {
     "doc": "Workflow Template",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | Workflow_Template__c | . | Label | Workflow Template | . | Plural Label | Workflow Templates | . | Sharing Model | [Your sharing model] | . ",
     "url": "/pages/objects/workflow-template.html#object-details",
     
     "relUrl": "/pages/objects/workflow-template.html#object-details"
-  },"375": {
+  },"403": {
     "doc": "Workflow Template",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Active | Active__c | Checkbox | Template availability status | . | Approval Process Developer Name | Approval_Process_Developer_Name__c | Text | Developer name reference | . | Approval Process Filter | Approval_Process_Filter__c | Text | Filter for approval processes | . | Description | Description__c | Text Area | Template description | . | Help Text | Help_Text__c | Text | User guidance content | . | Limited to Record Type | Limited_to_Record_Type__c | Summary | Count of associated record types | . | Require Document | Require_Document__c | Checkbox | Document requirement flag | . | Workflow Type | Workflow_Type__c | Picklist | Template category/purpose | . ",
     "url": "/pages/objects/workflow-template.html#fields",
     
     "relUrl": "/pages/objects/workflow-template.html#fields"
-  },"376": {
+  },"404": {
     "doc": "Workflow Template",
     "title": "Key Features",
     "content": ". | Template Management | Process Configuration | Document Requirements | Record Type Limitations | Help Text Support | . ",
     "url": "/pages/objects/workflow-template.html#key-features",
     
     "relUrl": "/pages/objects/workflow-template.html#key-features"
-  },"377": {
+  },"405": {
     "doc": "Workflow Template",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/workflow-template.html#relationships",
     
     "relUrl": "/pages/objects/workflow-template.html#relationships"
-  },"378": {
+  },"406": {
     "doc": "Workflow Template",
     "title": "Child Objects",
     "content": ". | Workflow (Workflow__c) | Workflow Record Type (Workflow_Record_Type__c) | . ",
     "url": "/pages/objects/workflow-template.html#child-objects",
     
     "relUrl": "/pages/objects/workflow-template.html#child-objects"
-  },"379": {
+  },"407": {
     "doc": "Workflow Template",
     "title": "Common Use Cases",
     "content": ". | Process Definition . | Workflow standardization | Process templating | Configuration management | . | Approval Process Management . | Process definition | Approval routing | Document requirements | . | Record Type Control . | Access control | Process limitation | Type-specific workflows | . | . ",
     "url": "/pages/objects/workflow-template.html#common-use-cases",
     
     "relUrl": "/pages/objects/workflow-template.html#common-use-cases"
-  },"380": {
+  },"408": {
     "doc": "Workflow Template",
     "title": "Best Practices",
     "content": ". | Template Configuration . | Clear descriptions | Comprehensive help text | Proper type classification | . | Process Definition . | Clear requirements | Proper documentation | Regular review | . | Maintenance . | Regular updates | Active status management | Documentation updates | . | . ",
     "url": "/pages/objects/workflow-template.html#best-practices",
     
     "relUrl": "/pages/objects/workflow-template.html#best-practices"
-  },"381": {
+  },"409": {
     "doc": "Workflow Template",
     "title": "Workflow Template",
     "content": " ",
     "url": "/pages/objects/workflow-template.html",
     
     "relUrl": "/pages/objects/workflow-template.html"
-  },"382": {
+  },"410": {
     "doc": "Workflow",
     "title": "Workflow (Workflow__c)",
     "content": " ",
     "url": "/pages/objects/workflow.html#workflow-workflow__c",
     
     "relUrl": "/pages/objects/workflow.html#workflow-workflow__c"
-  },"383": {
+  },"411": {
     "doc": "Workflow",
     "title": "Overview",
     "content": "The Workflow object manages individual workflows, including their status, associated approvers, and other workflow-related details. It provides a framework for tracking and managing approval processes and workflow states. ",
     "url": "/pages/objects/workflow.html#overview",
     
     "relUrl": "/pages/objects/workflow.html#overview"
-  },"384": {
+  },"412": {
     "doc": "Workflow",
     "title": "Object Details",
     "content": "| Aspect | Description | . | API Name | Workflow__c | . | Label | Workflow | . | Plural Label | Workflows | . | Sharing Model | [Your sharing model] | . ",
     "url": "/pages/objects/workflow.html#object-details",
     
     "relUrl": "/pages/objects/workflow.html#object-details"
-  },"385": {
+  },"413": {
     "doc": "Workflow",
     "title": "Fields",
     "content": "| Field Name | API Name | Type | Description | . | Date | Date__c | Date | Workflow initiation/action date | . | Description | Description__c | Text Area | Internal workflow description | . | Initial Approver | Initial_Approver__c | Lookup (User) | First approver in workflow | . | Investigation | Investigation__c | Lookup | Related investigation record | . | Matter | Matter__c | Lookup | Related matter record | . | Parameter 1 | Parameter_1__c | Text | System-specific workflow parameter | . | Request | Request__c | Lookup | Related request record | . | Status | Status__c | Picklist | Current state (Not Submitted, Submitted, Approved, Rejected) | . | Workflow Template | Workflow_Template__c | Lookup | Link to base template | . | Workflow Type | Workflow_Type__c | Text | Template-derived type | . ",
     "url": "/pages/objects/workflow.html#fields",
     
     "relUrl": "/pages/objects/workflow.html#fields"
-  },"386": {
+  },"414": {
     "doc": "Workflow",
     "title": "Key Features",
     "content": ". | Approval Process Management | Status Tracking | Multiple Object Integration | Template-based Configuration | Parameter Support | . ",
     "url": "/pages/objects/workflow.html#key-features",
     
     "relUrl": "/pages/objects/workflow.html#key-features"
-  },"387": {
+  },"415": {
     "doc": "Workflow",
     "title": "Relationships",
     "content": " ",
     "url": "/pages/objects/workflow.html#relationships",
     
     "relUrl": "/pages/objects/workflow.html#relationships"
-  },"388": {
+  },"416": {
     "doc": "Workflow",
     "title": "Related Objects",
     "content": ". | User (via Initial_Approver__c) | Investigation (via Investigation__c) | Matter (via Matter__c) | Request (via Request__c) | Workflow Template (via Workflow_Template__c) | . ",
     "url": "/pages/objects/workflow.html#related-objects",
     
     "relUrl": "/pages/objects/workflow.html#related-objects"
-  },"389": {
+  },"417": {
     "doc": "Workflow",
     "title": "Common Use Cases",
     "content": ". | Approval Process Management . | Managing approval workflows | Tracking approval status | Routing approvals | . | Process Automation . | Workflow execution | Status updates | Automated routing | . | Record Processing . | Matter workflows | Investigation processes | Request handling | . | . ",
     "url": "/pages/objects/workflow.html#common-use-cases",
     
     "relUrl": "/pages/objects/workflow.html#common-use-cases"
-  },"390": {
+  },"418": {
     "doc": "Workflow",
     "title": "Best Practices",
     "content": ". | Workflow Configuration . | Clear process definition | Proper template selection | Accurate parameter setting | . | Status Management . | Regular status updates | Clear state transitions | Proper documentation | . | Approver Management . | Clear approver designation | Proper routing setup | Backup approver configuration | . | . ",
     "url": "/pages/objects/workflow.html#best-practices",
     
     "relUrl": "/pages/objects/workflow.html#best-practices"
-  },"391": {
+  },"419": {
     "doc": "Workflow",
     "title": "Workflow",
     "content": " ",
