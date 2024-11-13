@@ -2,8 +2,8 @@ title: ReconMMS Documentation
 description: Documentation for the Recon Matter Management System
 remote_theme: just-the-docs/just-the-docs@v0.7.0
 
-url: https://staggerlee9.github.io
-baseurl: /RA-docs
+url: "https://www.reconapps-docs.com"  # Your custom domain URL
+baseurl: ""  # Leave this blank for a custom domain
 
 plugins:
   - jekyll-remote-theme
