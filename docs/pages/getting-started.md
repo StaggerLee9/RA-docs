@@ -7,8 +7,8 @@ title: Getting Started
 
 Welcome to the Recon Matter Management System (ReconMMS). This guide will help you get up and running quickly. 
 
-**Please note this documentation is propritary and confidential and may not be shared without prior written consent.
-Sharing without consent shall be considered a explicit breach of applicable non-disclousure or similar agreements.**
+**Please note this documentation is proprietary and confidential and may not be shared without prior written consent. 
+Sharing without consent shall be considered a explicit breach of applicable non-disclosure or similar agreements.**
 
 ## Prerequisites
 
