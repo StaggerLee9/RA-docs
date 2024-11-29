@@ -17,7 +17,7 @@ Before installing the package, ensure you have:
 ## Installation Steps
 
 1. **Install the Package**
-   - Navigate to the [installation link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tPF0000007eAPYAY)
+   - Send an email to support@recon-apps.com to get an installation link. 
    - Log in with your Salesforce credentials
    - Select "Install for Admins Only" (recommended)
    - Click "Install"
