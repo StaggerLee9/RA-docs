@@ -1,6 +1,6 @@
 title: ReconMMS Documentation
 description: Documentation for the Recon Matter Management System
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.7.0
 
 url: "https://www.reconapps-docs.com"  # Your custom domain URL
 baseurl: ""  # Leave this blank for a custom domain
@@ -9,6 +9,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-remote-theme
 
 # Mermaid configuration
 mermaid:

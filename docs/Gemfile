@@ -1,14 +1,9 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.2"
-gem "just-the-docs", "~> 0.7.0"
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-remote-theme", group: :jekyll_plugins
 
-group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "jekyll-seo-tag"
-  gem "jekyll-sitemap"
+group :development do
+  gem "webrick"
+  gem "sass-embedded", "= 1.77.5"
 end
-
-gem "webrick"
-
-gem "sass-embedded", "= 1.77.5"
