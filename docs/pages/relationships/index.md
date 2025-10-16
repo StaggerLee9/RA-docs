@@ -22,7 +22,7 @@ This section provides comprehensive documentation of object relationships within
   - Work Group
 
 ### Investigation Management
-- Investigation Relationships
+- [Investigation Relationships](invesigation-relationships)
   - Investigation Contact
   - Investigation Account
   - Evidence
@@ -39,6 +39,19 @@ This section provides comprehensive documentation of object relationships within
   - Matter
   - Investigation
   - Issues
+
+### Claim Management
+- [Claim Relationships](claim-relationships)
+  - Claim Contact
+  - Claim Detail
+  - Contact
+
+### FOIA Management
+- [FOIA Relationships](foia-relationships)
+  - FOIA Authority
+  - FOIA Exemption
+  - FOIA Matter
+  - Matter
 
 ## Common Relationship Patterns
 
@@ -122,7 +135,9 @@ Each relationship page includes:
 Select from the relationship pages below to view detailed documentation for each core object's relationships:
 - [Matter Relationships](matter-relationships)
 - Activity Rule Relationships
-- Investigation Relationships
+- [Investigation Relationships](invesigation-relationships)
 - Request Relationships
+- [Claim Relationships](claim-relationships)
+- [FOIA Relationships](foia-relationships)
 
 Each page provides detailed diagrams, field mappings, and implementation guidelines specific to that object's relationships.

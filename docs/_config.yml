@@ -1,12 +1,11 @@
 title: ReconMMS Documentation
 description: Documentation for the Recon Matter Management System
-remote_theme: just-the-docs/just-the-docs@v0.7.0
+theme: just-the-docs
 
 url: "https://www.reconapps-docs.com"  # Your custom domain URL
 baseurl: ""  # Leave this blank for a custom domain
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -25,9 +24,6 @@ collections:
     permalink: "/:path/"
 
 # Just the Docs specific configuration
-aux_links:
-  "View on GitHub": "https://github.com/StaggerLee9/RA-docs"
-
 search_enabled: true
 color_scheme: light
 back_to_top: true
