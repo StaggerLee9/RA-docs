@@ -1,6 +1,6 @@
-title: ReconMMS Documentation
-description: Documentation for the Recon Matter Management System
-remote_theme: just-the-docs/just-the-docs@v0.7.0
+title: Recon Product Suite Documentation
+description: Unified documentation hub for the Recon product suite.
+remote_theme: just-the-docs/just-the-docs@v0.6.3
 
 url: "https://www.reconapps-docs.com"  # Your custom domain URL
 baseurl: ""  # Leave this blank for a custom domain
@@ -58,6 +58,7 @@ search:
   tokenizer_separator: /[\s/]+/
   rel_url: true
   button: true
+  placeholder_text: "Search Recon Product Documentation"
 
 # Exclude files from processing
 exclude:

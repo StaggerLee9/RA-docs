@@ -1,0 +1,7 @@
+theme: just-the-docs
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-sitemap
+jekyll_remote_theme:
+  download: false
