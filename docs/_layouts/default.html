@@ -23,23 +23,14 @@
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('pre code.language-mermaid').forEach(function (block) {
-        var wrapper = document.createElement('div');
-        wrapper.className = 'mermaid';
-        wrapper.textContent = block.textContent;
-        block.parentElement.replaceWith(wrapper);
-      });
+  {% if site.search_enabled != false and page.landing != true %}
+    {% include components/search_footer.html %}
+  {% endif %}
 
-      mermaid.initialize({
-        startOnLoad: true,
-        theme: 'forest',
-        securityLevel: 'loose'
-      });
-    });
-  </script>
-  <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
+  {% if site.mermaid %}
+    {% include components/mermaid.html %}
+  {% endif %}
+
+  {% include scripts.html %}
 </body>
 </html>
