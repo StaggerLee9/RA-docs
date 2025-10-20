@@ -81,13 +81,23 @@ Use the cards below to jump into the documentation hubs for each Recon product. 
     </ul>
   </section>
 
-  <section class="product-card product-placeholder">
-    <h2>Product Slot 6</h2>
-    <p>Use consistent formatting to make navigation predictable.</p>
+  <section class="product-card">
+    <h2><a class="product-card-link" href="pages/products/recon-audit-trail">Recon Audit Trail</a></h2>
+    <p>Native Salesforce solution that captures high-volume field history, automates backups, and keeps audits searchable for compliance teams.</p>
     <ul>
-      <li><em>Add documentation hub link</em></li>
-      <li><em>Add key architecture notes</em></li>
-      <li><em>Add support process</em></li>
+      <li><a href="pages/products/recon-audit-trail/overview">Product Overview</a></li>
+      <li><a href="pages/products/recon-audit-trail/implementation">Implementation Checklist</a></li>
+      <li><a href="pages/products/recon-audit-trail/troubleshooting">Operations &amp; Troubleshooting</a></li>
+    </ul>
+  </section>
+
+  <section class="product-card">
+    <h2><a class="product-card-link" href="pages/products/recon-form-builder">Recon Form Builder</a></h2>
+    <p>Configurable intake builder that lets power users launch interactive forms on Experience Cloud or internal pages and route submissions into Salesforce.</p>
+    <ul>
+      <li><a href="pages/products/recon-form-builder/overview">Product Overview</a></li>
+      <li><a href="pages/products/recon-form-builder/implementation">Implementation Checklist</a></li>
+      <li><a href="pages/products/recon-form-builder/troubleshooting">Operations &amp; Troubleshooting</a></li>
     </ul>
   </section>
 </div>
