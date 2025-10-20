@@ -100,6 +100,14 @@ Use the cards below to jump into the documentation hubs for each Recon product. 
       <li><a href="pages/products/recon-form-builder/troubleshooting">Operations &amp; Troubleshooting</a></li>
     </ul>
   </section>
+
+  <section class="product-card product-upcoming">
+    <h2><a class="product-card-link" href="pages/products/recon-ai">ReconAI</a></h2>
+    <p>Scheduled Release Q2 2026 — schema-aware conversational AI that delivers secure, natural language answers over Salesforce and connected Recon data.</p>
+    <ul>
+      <li><a href="pages/products/recon-ai/overview">Product Overview</a></li>
+    </ul>
+  </section>
 </div>
 
 ---

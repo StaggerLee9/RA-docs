@@ -38,3 +38,6 @@ Use this section to dive into implementation guides for each Recon managed packa
   - [Product Overview](recon-form-builder/overview)
   - [Implementation Checklist](recon-form-builder/implementation)
   - [Operations & Troubleshooting](recon-form-builder/troubleshooting)
+- [ReconAI](recon-ai)
+  - [Product Overview](recon-ai/overview)
+  - Scheduled Release: Q2 2026
