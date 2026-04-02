@@ -82,11 +82,14 @@ erDiagram
 ```
 
 ### Diagram Legend
-- **||--o{** : One-to-many (master-detail) relationship
-- **}o--||** : Many-to-one (lookup) relationship
-- **}o--o{** : Many-to-many relationship
-- **PK**: Primary Key
-- **FK**: Foreign Key
+
+| Symbol | Meaning |
+|--------|---------|
+| <code>&#124;&#124;--o{</code> | One-to-many (master-detail) relationship |
+| <code>}o--&#124;&#124;</code> | Many-to-one (lookup) relationship |
+| <code>}o--o{</code> | Many-to-many relationship |
+| **PK** | Primary Key |
+| **FK** | Foreign Key |
 
 ## Key Relationships
 

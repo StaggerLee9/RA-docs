@@ -1,14 +1,12 @@
 ---
 layout: default
 title: Getting Started
+nav_order: 1
 ---
 
 # Getting Started
 
 Welcome to the Recon Matter Management System (ReconMMS). This guide will help you get up and running quickly. 
-
-**Please note this documentation is proprietary and confidential and may not be shared without prior written consent. 
-Sharing without consent shall be considered a explicit breach of applicable non-disclosure or similar agreements.**
 
 ## Prerequisites
 
@@ -41,13 +39,12 @@ Before installing the package, ensure you have:
 
 ## Next Steps
 
-- See the [Configuration Guide](/pages/configuration) to customize the package
-- Review [User Management](/pages/user-management) for setting up user access
-- Check the [API Reference](/pages/api-reference) if you're planning to integrate
+- See the [Configuration Guide](configuration/) to customize the package
+- Review the [Object Reference](object-reference) for the full data model
+- Explore the [Product Guides](products/) for implementation checklists
 
 ## Need Help?
 
 If you encounter any issues during installation or setup:
-- Review our [Troubleshooting Guide](/pages/troubleshooting)
 - Contact your Salesforce administrator
-- Reach out to our support team
+- Reach out to our support team at support@recon-apps.com

@@ -29,7 +29,7 @@ search_enabled: true
 color_scheme: light
 back_to_top: true
 back_to_top_text: "Back to top"
-footer_content: "Copyright &copy; 2024"
+footer_content: "Copyright &copy; 2026 Recon Apps. All rights reserved."
 
 # Enable copy code button
 enable_copy_code_button: true
@@ -81,3 +81,8 @@ defaults:
       path: ""
     values:
       layout: default
+  -
+    scope:
+      path: "assets"
+    values:
+      layout: null
