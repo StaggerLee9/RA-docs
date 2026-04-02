@@ -26,7 +26,7 @@ flowchart LR
     Claims["Claims"]
     Investigations["Investigations"]
     Requests["Intake Requests"]
-    LegalHold["Legal Holds (upcoming)"]
+    LegalHold["Legal Holds"]
   end
 
   subgraph ReconSearch["Recon Search"]
@@ -148,7 +148,7 @@ flowchart LR
 
 ## Looking Ahead
 
-- **Legal Hold object** – Will enable automated file restrictions, notifications, and dashboarding alongside Matters and Investigations.  
+- **Legal Hold automation enhancements** – Expand automated restrictions, notifications, and dashboards that support ongoing matter governance.  
 - **FOIA integration** – Files tied to FOIA requests can trigger custom workflows (e.g., anonymization, disclosure tracking).  
 - **AI Text Search** – Optional agent-based extension that augments Recon Search without altering the overall interaction model.  
 - **Form Builder JSON Mapping** – Reuse form definitions as integration blueprints for external intake endpoints.  

@@ -1,129 +1,1111 @@
-/* Custom styles for Activity Rules documentation */
+/* ==========================================================================
+   RECON DOCS — Civic Precision Theme
 
-.fs-9 {
-    font-size: 2.5rem !important;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+   Custom styles for the Recon Product Suite documentation site.
+   Overrides Just the Docs v0.6.1 defaults with a warm, authoritative palette
+   built around deep navy, copper accents, and stone-toned surfaces.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   0. Design Tokens
+   -------------------------------------------------------------------------- */
+:root {
+  /* Navy (Structural / Sidebar) */
+  --rc-navy-950: #080F1C;
+  --rc-navy-900: #0F1A2E;
+  --rc-navy-800: #162540;
+  --rc-navy-700: #1E3254;
+  --rc-navy-600: #2A4470;
+
+  /* Stone (Surfaces) */
+  --rc-stone-50:  #FAF9F6;
+  --rc-stone-100: #F3F1EC;
+  --rc-stone-200: #E5E0D8;
+  --rc-stone-300: #D5CFC4;
+
+  /* Ink (Text) */
+  --rc-ink-900: #1A2332;
+  --rc-ink-700: #374050;
+  --rc-ink-500: #6B7280;
+  --rc-ink-400: #9CA3AF;
+
+  /* Copper (Primary Accent) */
+  --rc-copper-300: #E0B07A;
+  --rc-copper-400: #D4944E;
+  --rc-copper-500: #B87333;
+  --rc-copper-600: #9A6230;
+
+  /* Teal (Links / Interactive) */
+  --rc-teal-400: #3AAFA8;
+  --rc-teal-500: #2B7C78;
+  --rc-teal-600: #226462;
+
+  /* Semantic */
+  --rc-sage-500:  #5F8A72;
+  --rc-amber-500: #D4953A;
+  --rc-rose-500:  #C24B4B;
+
+  /* Product Accents */
+  --rc-product-platform:   var(--rc-copper-500);
+  --rc-product-mms:        var(--rc-navy-700);
+  --rc-product-visualizer: #2D8F8B;
+  --rc-product-search:     #5B63A5;
+  --rc-product-dms:        #3D7F5F;
+  --rc-product-audit:      #C4953A;
+  --rc-product-forms:      #B85C6B;
+  --rc-product-ai:         #7B68AE;
+
+  /* Typography */
+  --rc-font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --rc-font-body:    'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --rc-font-mono:    'JetBrains Mono', 'Fira Code', Consolas, monospace;
 }
 
-.fs-6 {
-    font-size: 1.5rem !important;
-    margin-bottom: 2rem;
+/* --------------------------------------------------------------------------
+   1. Just the Docs Variable Overrides
+   -------------------------------------------------------------------------- */
+:root {
+  --body-background-color: var(--rc-stone-50);
+  --sidebar-color: var(--rc-navy-900);
+  --body-text-color: var(--rc-ink-700);
+  --body-heading-color: var(--rc-ink-900);
+  --link-color: var(--rc-teal-500);
+  --nav-width: 272px;
 }
 
-.fw-300 {
-    font-weight: 300 !important;
+/* --------------------------------------------------------------------------
+   2. Base & Typography
+   -------------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
 }
 
-.text-delta {
-    font-weight: 700;
-    font-size: 1.1rem !important;
-    color: #7253ed;
+body {
+  font-family: var(--rc-font-body);
+  font-size: 1.05rem !important;
+  color: var(--rc-ink-700);
+  background-color: var(--rc-stone-50);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-dt {
-    font-weight: 700;
-    margin-top: 1rem;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--rc-font-display);
+  color: var(--rc-ink-900);
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
-dd {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
+h1 { font-size: 2.25rem; line-height: 1.2; margin-bottom: 1rem; }
+h2 { font-size: 1.625rem; line-height: 1.25; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.25rem; line-height: 1.3; margin-top: 2rem; }
+h4 { font-size: 1.1rem; font-weight: 600; }
+
+p { line-height: 1.7; margin-bottom: 1rem; }
+
+a {
+  color: var(--rc-teal-500);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.btn {
-    display: inline-block;
-    padding: 0.375rem 0.75rem;
-    margin-bottom: 0.5rem;
-    text-decoration: none;
-    background-color: #7253ed;
-    color: white;
-    border-radius: 4px;
+a:hover {
+  color: var(--rc-teal-600);
+  text-decoration: underline;
+}
+
+strong { font-weight: 600; color: var(--rc-ink-900); }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rc-stone-200);
+  margin: 2.5rem 0;
+}
+
+/* Accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--rc-copper-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   3. Sidebar
+   -------------------------------------------------------------------------- */
+.side-bar {
+  background-color: var(--rc-navy-900);
+  border-right: 1px solid var(--rc-navy-700);
+  box-shadow: 2px 0 8px rgba(15, 26, 46, 0.12);
+}
+
+/* Override theme's calc() that grows sidebar with viewport */
+@media (min-width: 66.5rem) {
+  .side-bar {
+    width: 16.5rem !important;
+    min-width: 16.5rem !important;
+  }
+}
+
+@media (min-width: 50rem) {
+  .main {
+    margin-left: 16.5rem !important;
+  }
+}
+
+.site-title {
+  font-family: var(--rc-font-display);
+  font-weight: 700;
+  color: #FFFFFF !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.01em;
+  line-height: 1.3 !important;
+}
+
+.site-title:hover {
+  background-color: transparent;
+}
+
+/* Let sidebar header grow to fit the site title */
+@media (min-width: 50rem) {
+  .site-header {
+    height: auto !important;
+    max-height: none !important;
+  }
+}
+
+/* Search — lives in .main-header (content area), not the sidebar */
+.search-input {
+  font-family: var(--rc-font-body);
+  background-color: var(--rc-stone-100) !important;
+  border: 1px solid var(--rc-stone-200);
+  color: var(--rc-ink-900);
+  border-radius: 6px;
+}
+
+.search-input::placeholder {
+  color: var(--rc-ink-400);
+}
+
+.search-input:focus {
+  background-color: #FFFFFF !important;
+  border-color: var(--rc-copper-500);
+  box-shadow: 0 0 0 2px rgba(184, 115, 51, 0.2);
+}
+
+.search-label .search-icon {
+  color: var(--rc-ink-400);
+}
+
+/* Nav links */
+.site-nav {
+  padding-top: 0.5rem;
+}
+
+.nav-list .nav-list-item {
+  font-family: var(--rc-font-body);
+  font-size: 0.95rem !important;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  color: var(--rc-stone-200);
+  padding: 0.4rem 1rem;
+  border-left: 3px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.nav-list .nav-list-item .nav-list-link:hover {
+  background-color: var(--rc-navy-800);
+  color: var(--rc-copper-300);
+  border-left-color: var(--rc-copper-400);
+}
+
+.nav-list .nav-list-item .nav-list-link.active {
+  background-color: rgba(184, 115, 51, 0.12);
+  color: var(--rc-copper-400);
+  border-left-color: var(--rc-copper-500);
+  font-weight: 600;
+}
+
+.nav-list .nav-list-item .nav-list-expander {
+  color: var(--rc-ink-400);
+}
+
+/* Override theme's light gradient on hover/active — designed for white sidebar */
+.nav-list .nav-list-item .nav-list-link:hover,
+.nav-list .nav-list-item .nav-list-link.active {
+  background-image: none !important;
+}
+
+.nav-list .nav-list-item .nav-list-expander:hover {
+  background-image: none !important;
+  background-color: var(--rc-navy-800);
+}
+
+.site-title:hover {
+  background-image: none !important;
+}
+
+.site-button:hover {
+  background-image: none !important;
+}
+
+/* Kill theme's inline <style> gradient on the active page's nav link */
+.site-nav .nav-list-link {
+  background-image: none !important;
+}
+
+/* Nested nav */
+.nav-list .nav-list-item .nav-list .nav-list-item .nav-list-link {
+  color: var(--rc-stone-300);
+  font-size: 0.85rem;
+  padding-left: 1.75rem;
+}
+
+.nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
+  color: var(--rc-stone-300);
+}
+
+.nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-expander {
+  color: var(--rc-ink-400);
+}
+
+/* Sidebar footer */
+.side-bar .site-footer {
+  background-color: var(--rc-navy-950);
+  color: var(--rc-ink-400);
+  border-top: 1px solid var(--rc-navy-700);
+  font-size: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   4. Site Header & Breadcrumbs
+   -------------------------------------------------------------------------- */
+/* On desktop, site-header is inside the sidebar; on mobile it's the top bar */
+@media (min-width: 50rem) {
+  .site-header {
+    background-color: transparent;
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 49.99rem) {
+  .site-header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid var(--rc-stone-200);
+  }
+}
+
+.breadcrumb-nav {
+  font-size: 0.8rem;
+  color: var(--rc-ink-500);
+  font-family: var(--rc-font-body);
+}
+
+.breadcrumb-nav-list-item a {
+  color: var(--rc-ink-500);
+}
+
+.breadcrumb-nav-list-item a:hover {
+  color: var(--rc-teal-500);
+}
+
+/* --------------------------------------------------------------------------
+   5. Main Content Area
+   -------------------------------------------------------------------------- */
+.main {
+  background-color: var(--rc-stone-50);
+}
+
+@media (min-width: 50rem) {
+  .main-content-wrap {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    max-width: none !important;
+  }
+}
+
+.main-content {
+  font-family: var(--rc-font-body);
+  font-size: 1.05rem !important;
+  line-height: 1.7;
+  max-width: none !important;
+  animation: rc-fadeIn 0.35s ease-out;
+}
+
+.main-content h1:first-child {
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--rc-copper-500);
+  margin-bottom: 1.5rem;
+}
+
+.main-content ul,
+.main-content ol {
+  line-height: 1.7;
+}
+
+.main-content li + li {
+  margin-top: 0.2rem;
+}
+
+/* Heading anchors */
+.anchor-heading {
+  color: var(--rc-stone-300);
+  transition: color 0.15s ease;
+}
+
+*:hover > .anchor-heading {
+  color: var(--rc-copper-500);
+}
+
+/* In-page TOC */
+#markdown-toc {
+  font-family: var(--rc-font-body);
+  font-size: 0.95rem;
+  border-left: 2px solid var(--rc-stone-200);
+  padding-left: 1rem;
+}
+
+#markdown-toc a {
+  color: var(--rc-ink-500);
+}
+
+#markdown-toc a:hover {
+  color: var(--rc-teal-500);
+}
+
+/* --------------------------------------------------------------------------
+   6. Tables
+   -------------------------------------------------------------------------- */
+.main-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  border: 1px solid var(--rc-stone-200);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.main-content th {
+  background-color: var(--rc-navy-900);
+  color: #FFFFFF;
+  font-family: var(--rc-font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: none;
+}
+
+.main-content td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--rc-stone-200);
+  border-right: none;
+  border-left: none;
+  vertical-align: top;
+}
+
+.main-content tr:last-child td {
+  border-bottom: none;
+}
+
+.main-content tbody tr:hover {
+  background-color: var(--rc-stone-100);
+}
+
+/* --------------------------------------------------------------------------
+   7. Code
+   -------------------------------------------------------------------------- */
+code {
+  font-family: var(--rc-font-mono);
+  font-size: 0.85em;
+  background-color: var(--rc-stone-100);
+  color: var(--rc-navy-700);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--rc-stone-200);
+}
+
+pre {
+  background-color: var(--rc-navy-950) !important;
+  border: 1px solid var(--rc-navy-700);
+  border-radius: 8px;
+  padding: 1.25rem;
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--rc-stone-100);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* Copy code button */
+.copy-code-button {
+  font-family: var(--rc-font-body);
+  font-size: 0.7rem;
+  background-color: var(--rc-navy-700);
+  color: var(--rc-stone-200);
+  border-radius: 4px;
+}
+
+.copy-code-button:hover {
+  background-color: var(--rc-copper-500);
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   8. Blockquotes & Callouts
+   -------------------------------------------------------------------------- */
+blockquote {
+  border-left: 4px solid var(--rc-copper-500);
+  background-color: var(--rc-stone-100);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 6px 6px 0;
+  color: var(--rc-ink-700);
+  font-size: 0.95rem;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.warning {
+  border-left-color: var(--rc-rose-500);
+  background-color: #FEF2F2;
+}
+
+.note {
+  border-left-color: var(--rc-teal-500);
+  background-color: #F0F9F8;
+}
+
+.tip {
+  border-left-color: var(--rc-sage-500);
+  background-color: #F0F7F3;
+}
+
+/* --------------------------------------------------------------------------
+   9. Buttons
+   -------------------------------------------------------------------------- */
+.btn, .rc-btn {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  font-family: var(--rc-font-body);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .btn-outline {
-    background-color: transparent;
-    border: 1px solid #7253ed;
-    color: #7253ed;
-}
-
-.btn:hover {
-    background-color: #5a43ba;
-    color: white;
-    text-decoration: none;
+  background-color: transparent;
+  border: 1.5px solid var(--rc-copper-500);
+  color: var(--rc-copper-500);
 }
 
 .btn-outline:hover {
-    background-color: #7253ed;
+  background-color: var(--rc-copper-500);
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
-/* Grid layout for product cards on the landing page */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+.rc-btn-primary {
+  background-color: var(--rc-copper-500);
+  color: #FFFFFF;
+  border: 1.5px solid var(--rc-copper-500);
 }
 
-.product-card {
-    background-color: #ffffff;
-    border: 1px solid #e1e4e8;
-    border-radius: 6px;
-    padding: 1.25rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+.rc-btn-primary:hover {
+  background-color: var(--rc-copper-600);
+  border-color: var(--rc-copper-600);
+  color: #FFFFFF;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(184, 115, 51, 0.25);
 }
 
-.product-card h2 {
-    font-size: 1.25rem;
-    margin-top: 0;
+.rc-btn-ghost {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
 }
 
-.product-card h2 .product-card-link {
-    color: inherit;
-    text-decoration: none;
+.rc-btn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
-.product-card h2 .product-card-link:hover {
-    text-decoration: underline;
+/* --------------------------------------------------------------------------
+   10. Definition Lists & Utility Classes
+   -------------------------------------------------------------------------- */
+dt {
+  font-weight: 700;
+  font-family: var(--rc-font-body);
+  color: var(--rc-ink-900);
+  margin-top: 1.25rem;
 }
 
-.product-card ul {
-    margin: 0.75rem 0 0;
-    padding-left: 1.1rem;
+dd {
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
 }
 
-.product-card li + li {
-    margin-top: 0.35rem;
+.text-delta {
+  font-family: var(--rc-font-body);
+  font-weight: 700;
+  font-size: 0.8rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--rc-copper-600);
 }
 
-.product-placeholder {
-    border-style: dashed;
-    color: #6b7280;
+.fs-9 {
+  font-family: var(--rc-font-display) !important;
+  font-size: 2.5rem !important;
+  line-height: 1.15;
+  color: var(--rc-ink-900);
+  letter-spacing: -0.02em;
 }
 
-.product-placeholder em {
-    font-style: normal;
-    font-weight: 600;
+.fs-6 {
+  font-size: 1.25rem !important;
+  color: var(--rc-ink-500);
+  line-height: 1.6;
 }
 
-/* Landing page layout adjustments */
-.landing-page .landing-main {
-    margin-left: 0;
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+/* --------------------------------------------------------------------------
+   11. Search Results
+   -------------------------------------------------------------------------- */
+.search-results {
+  background-color: #FFFFFF;
+  border: 1px solid var(--rc-stone-200);
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(15, 26, 46, 0.15);
+}
+
+.search-results-list-item {
+  border-bottom: 1px solid var(--rc-stone-100);
+}
+
+.search-result-title {
+  font-family: var(--rc-font-display);
+  color: var(--rc-ink-900);
+}
+
+.search-result-doc .search-result-doc-title {
+  color: var(--rc-teal-500);
+}
+
+.search-result-previews {
+  color: var(--rc-ink-500);
+}
+
+/* --------------------------------------------------------------------------
+   12. Mermaid Diagrams
+   -------------------------------------------------------------------------- */
+pre:has(.language-mermaid),
+pre.mermaid,
+.mermaid {
+  background: #FFFFFF !important;
+  border: 1px solid var(--rc-stone-200);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* --------------------------------------------------------------------------
+   13. Back to Top
+   -------------------------------------------------------------------------- */
+#back-to-top,
+.back-to-top {
+  background-color: var(--rc-navy-900);
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-family: var(--rc-font-body);
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+#back-to-top:hover,
+.back-to-top:hover {
+  background-color: var(--rc-copper-500);
+}
+
+/* ==========================================================================
+   LANDING PAGE
+   ========================================================================== */
+
+/* Layout — hide sidebar, let content fill the viewport */
+.landing-page .side-bar {
+  display: none !important;
+}
+
+.landing-page .main {
+  margin-left: 0 !important;
+  max-width: 100% !important;
 }
 
 .landing-page .main-content-wrap {
-    max-width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  max-width: 1120px;
+  padding: 2rem;
+  margin: 0 auto;
 }
 
 .landing-page .main-content {
-    padding-top: 2rem;
+  padding-top: 0;
 }
 
+.landing-page .main-content h1:first-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* --- Hero --- */
+.rc-hero {
+  background: linear-gradient(135deg, var(--rc-navy-900) 0%, var(--rc-navy-700) 100%);
+  padding: 3.5rem 2.5rem 2.5rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.rc-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse at 80% 20%, rgba(184, 115, 51, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(43, 124, 120, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.rc-hero-inner {
+  position: relative;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.rc-hero-logo {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.rc-hero-title {
+  font-family: var(--rc-font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+.rc-accent {
+  color: var(--rc-copper-300);
+}
+
+.rc-hero-subtitle {
+  font-family: var(--rc-font-body);
+  color: var(--rc-stone-200);
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rc-hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rc-notice {
+  position: relative;
+  margin-top: 2rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rc-notice p {
+  color: var(--rc-stone-300);
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.rc-notice strong {
+  color: var(--rc-copper-300);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+}
+
+/* --- Section Titles --- */
+.rc-section-title {
+  font-family: var(--rc-font-display);
+  font-size: 1.75rem;
+  color: var(--rc-ink-900);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rc-stone-200);
+  position: relative;
+}
+
+.rc-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 64px;
+  height: 3px;
+  background: var(--rc-copper-500);
+  border-radius: 2px;
+}
+
+/* --- Product Grid --- */
+.rc-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.rc-product-card {
+  background: #FFFFFF;
+  border: 1px solid var(--rc-stone-200);
+  border-top: 3px solid var(--card-accent, var(--rc-stone-300));
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.rc-product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15, 26, 46, 0.08);
+  border-color: var(--rc-stone-300);
+  border-top-color: var(--card-accent, var(--rc-stone-300));
+}
+
+.rc-product-card h3 {
+  font-family: var(--rc-font-display);
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+  color: var(--rc-ink-900);
+}
+
+.rc-product-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.rc-product-card h3 a:hover {
+  color: var(--card-accent, var(--rc-teal-500));
+  text-decoration: none;
+}
+
+.rc-product-card > p {
+  font-size: 0.875rem;
+  color: var(--rc-ink-500);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.rc-product-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rc-stone-200);
+  padding-top: 0.75rem;
+}
+
+.rc-product-card li {
+  margin: 0;
+  padding: 0;
+}
+
+.rc-product-card li + li {
+  margin-top: 0.25rem;
+}
+
+.rc-product-card li a {
+  display: block;
+  padding: 0.3rem 0;
+  font-size: 0.825rem;
+  color: var(--rc-teal-500);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.rc-product-card li a::before {
+  content: '\2192\00a0';
+  color: var(--rc-stone-300);
+  transition: color 0.15s ease;
+}
+
+.rc-product-card li a:hover {
+  color: var(--rc-teal-600);
+}
+
+.rc-product-card li a:hover::before {
+  color: var(--card-accent, var(--rc-teal-500));
+}
+
+/* Product-specific accents */
+.rc-product-card[data-product="platform"]   { --card-accent: var(--rc-product-platform); }
+.rc-product-card[data-product="mms"]        { --card-accent: var(--rc-product-mms); }
+.rc-product-card[data-product="visualizer"] { --card-accent: var(--rc-product-visualizer); }
+.rc-product-card[data-product="search"]     { --card-accent: var(--rc-product-search); }
+.rc-product-card[data-product="dms"]        { --card-accent: var(--rc-product-dms); }
+.rc-product-card[data-product="audit"]      { --card-accent: var(--rc-product-audit); }
+.rc-product-card[data-product="forms"]      { --card-accent: var(--rc-product-forms); }
+.rc-product-card[data-product="ai"]         { --card-accent: var(--rc-product-ai); }
+
+/* Upcoming product */
+.rc-product-card.rc-upcoming {
+  border-top-style: dashed;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(123, 104, 174, 0.02) 10px,
+    rgba(123, 104, 174, 0.02) 20px
+  );
+}
+
+.rc-product-card.rc-upcoming::after {
+  content: 'COMING SOON';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-family: var(--rc-font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--rc-product-ai);
+  background: rgba(123, 104, 174, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* --- Resources Grid --- */
+.rc-resources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+}
+
+.rc-resource-group h3 {
+  font-family: var(--rc-font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--rc-copper-600);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--rc-stone-200);
+}
+
+.rc-resource-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rc-resource-group li {
+  margin: 0;
+}
+
+.rc-resource-group li + li {
+  margin-top: 0.35rem;
+}
+
+.rc-resource-group li a {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.rc-resource-group li a::before {
+  content: '\203A';
+  color: var(--rc-copper-500);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* --- Stewardship --- */
+.rc-stewardship {
+  background: var(--rc-stone-100);
+  border: 1px solid var(--rc-stone-200);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.rc-stewardship h2 {
+  font-size: 1rem;
+  font-family: var(--rc-font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--rc-ink-500);
+  margin: 0 0 0.75rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.rc-stewardship ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.rc-stewardship li {
+  font-size: 0.85rem;
+  color: var(--rc-ink-500);
+  line-height: 1.6;
+}
+
+.rc-stewardship li + li {
+  margin-top: 0.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   Animations
+   -------------------------------------------------------------------------- */
+@keyframes rc-fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rc-slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.rc-product-grid .rc-product-card {
+  animation: rc-slideUp 0.4s ease-out backwards;
+}
+
+.rc-product-grid .rc-product-card:nth-child(1) { animation-delay: 0.05s; }
+.rc-product-grid .rc-product-card:nth-child(2) { animation-delay: 0.1s; }
+.rc-product-grid .rc-product-card:nth-child(3) { animation-delay: 0.15s; }
+.rc-product-grid .rc-product-card:nth-child(4) { animation-delay: 0.2s; }
+.rc-product-grid .rc-product-card:nth-child(5) { animation-delay: 0.25s; }
+.rc-product-grid .rc-product-card:nth-child(6) { animation-delay: 0.3s; }
+.rc-product-grid .rc-product-card:nth-child(7) { animation-delay: 0.35s; }
+.rc-product-grid .rc-product-card:nth-child(8) { animation-delay: 0.4s; }
+
+/* --------------------------------------------------------------------------
+   Reduced Motion
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Print
+   -------------------------------------------------------------------------- */
+@media print {
+  .side-bar,
+  .site-header,
+  .search,
+  #back-to-top,
+  .back-to-top,
+  .rc-hero-actions {
+    display: none !important;
+  }
+
+  .main { margin-left: 0 !important; }
+  .main-content { animation: none !important; }
+
+  .rc-hero {
+    background: var(--rc-navy-900) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
-    .landing-page .main-content-wrap {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+  .rc-hero {
+    padding: 2.5rem 1.5rem 2rem;
+  }
+
+  .rc-hero-title {
+    font-size: 1.75rem;
+  }
+
+  .rc-hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .rc-hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rc-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rc-resources {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .landing-page .main-content-wrap {
+    padding: 1rem;
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.375rem; }
+}
+
+@media (max-width: 50rem) {
+  .site-header .site-button {
+    color: var(--rc-ink-700);
+  }
 }

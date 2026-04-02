@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Activity Rules System
+nav_order: 7
 ---
 
 # Recon Matter Management System - Activity Rules System

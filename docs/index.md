@@ -5,134 +5,137 @@ nav_order: 1
 landing: true
 ---
 
-# Recon Product Suite Documentation
-{: .fs-9 }
+<div class="rc-hero">
+  <div class="rc-hero-inner">
+    <img src="assets/images/recon-logo.png" alt="Recon Apps" class="rc-hero-logo">
+    <h1 class="rc-hero-title">Recon Product Suite <span class="rc-accent">Documentation</span></h1>
+    <p class="rc-hero-subtitle">Plan, deploy, and operate every Recon solution built on the Salesforce platform. Built for implementation partners and Salesforce administrators.</p>
+    <div class="rc-hero-actions">
+      <a href="pages/getting-started" class="rc-btn rc-btn-primary">Get Started</a>
+      <a href="pages/products/architecture" class="rc-btn rc-btn-ghost">View Architecture</a>
+    </div>
+  </div>
+  <div class="rc-notice">
+    <p><strong>Confidential</strong> This documentation is proprietary and may not be shared without prior written consent. Sharing without consent shall be considered a breach of applicable non-disclosure agreements.</p>
+  </div>
+</div>
 
-<p align="center">
-  <img src="assets/images/recon-logo.png" alt="Recon logo" style="max-width: 320px;">
-</p>
+<h2 class="rc-section-title">Product Portfolio</h2>
 
-Implementation partners and Salesforce administrators can use this site to plan, deploy, and operate every Recon solution built on the Salesforce platform.
-{: .fs-6 .fw-300 }
-
-> This documentation is proprietary and confidential and may not be shared without prior written consent. Sharing without consent shall be considered an explicit breach of applicable non-disclosure or similar agreements.
-
-Use the navigation below to explore platform architecture, individual product hubs, and shared resources that accelerate deployments across the Recon ecosystem.
-
----
-
-## Product Portfolio
-
-Use the cards below to jump into the documentation hubs for each Recon product. Duplicate a card when you add another product so the landing page always reflects the full portfolio.
-
-<div class="product-grid">
-  <section class="product-card">
-    <h2><a class="product-card-link" href="pages/products/architecture">Recon Platform Architecture</a></h2>
-    <p>See how ReconMMS, Recon DMS, Recon Search, and Recon Data Visualizer interact across intake, document management, analytics, and visualization.</p>
+<div class="rc-product-grid">
+  <div class="rc-product-card" data-product="platform">
+    <h3><a href="pages/products/architecture">Recon Platform Architecture</a></h3>
+    <p>How ReconMMS, DMS, Search, Data Visualizer, Audit Trail, and Form Builder interact across the platform.</p>
     <ul>
       <li><a href="pages/products/architecture#overall-flow">High-Level Diagram</a></li>
       <li><a href="pages/products/architecture#module-interactions">Module Interactions</a></li>
       <li><a href="pages/products/architecture#key-data-contracts">Key Data Contracts</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="product-card">
-    <h2><a class="product-card-link" href="pages/getting-started">ReconMMS Core</a></h2>
-    <p>The managed package that powers the Recon Matter Management System for legal operations teams.</p>
+  <div class="rc-product-card" data-product="mms">
+    <h3><a href="pages/getting-started">ReconMMS Core</a></h3>
+    <p>Managed package powering the Recon Matter Management System for legal operations teams.</p>
     <ul>
       <li><a href="pages/getting-started">Implementation Checklist</a></li>
       <li><a href="pages/configuration/">Configuration Guides</a></li>
       <li><a href="pages/objects/activity-rule">Data Model Reference</a></li>
       <li><a href="pages/activity-rules">Automation Playbook</a></li>
-      <li><a href="pages/workflow-engine">Workflow Engine Docs</a></li>
+      <li><a href="pages/workflow-engine">Workflow Engine</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="product-card">
-    <h2><a class="product-card-link" href="pages/products/recon-data-visualizer">Recon Data Visualizer</a></h2>
-    <p>Interactive relationship maps that transform complex Salesforce data into clickable D3 graphs with admin-driven configuration.</p>
+  <div class="rc-product-card" data-product="visualizer">
+    <h3><a href="pages/products/recon-data-visualizer">Recon Data Visualizer</a></h3>
+    <p>Interactive relationship maps transforming Salesforce data into clickable D3 graphs with admin-driven configuration.</p>
     <ul>
-      <li><a href="pages/products/recon-data-visualizer">Product Overview &amp; Architecture</a></li>
-      <li><a href="pages/products/recon-data-visualizer-user-guide#visualizer-admin">Admin Console Walkthrough</a></li>
-      <li><a href="pages/products/recon-data-visualizer-user-guide#component-placement">Deploy the Lightning Component</a></li>
-      <li><a href="pages/products/recon-data-visualizer-user-guide#connected-app-and-named-credentials-setup">Connected App &amp; Named Credential Setup</a></li>
+      <li><a href="pages/products/recon-data-visualizer">Product Overview</a></li>
+      <li><a href="pages/products/recon-data-visualizer-user-guide#visualizer-admin">Admin Console</a></li>
+      <li><a href="pages/products/recon-data-visualizer-user-guide#component-placement">Lightning Component</a></li>
+      <li><a href="pages/products/recon-data-visualizer-user-guide#connected-app-and-named-credentials-setup">Connected App Setup</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="product-card">
-    <h2><a class="product-card-link" href="pages/products/recon-search">Recon Search</a></h2>
-    <p>Turn any Salesforce page layout into a powerful search workspace with saved criteria, SWARM alerts, and optional external data integrations.</p>
+  <div class="rc-product-card" data-product="search">
+    <h3><a href="pages/products/recon-search">Recon Search</a></h3>
+    <p>Turn any Salesforce page layout into a search workspace with saved criteria, SWARM alerts, and external data integrations.</p>
     <ul>
-      <li><a href="pages/products/recon-search">Product Overview &amp; Architecture</a></li>
+      <li><a href="pages/products/recon-search">Product Overview</a></li>
       <li><a href="pages/products/recon-search/implementation">Implementation Checklist</a></li>
       <li><a href="pages/products/recon-search/troubleshooting">Troubleshooting Guide</a></li>
       <li><a href="pages/products/recon-search-user-guide">Admin &amp; User Guide</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="product-card">
-    <h2><a class="product-card-link" href="pages/products/recon-dms">Recon DMS</a></h2>
-    <p>Capture, classify, and search enterprise documents with a Salesforce-first experience powered by AWS Textract and optional SharePoint integration.</p>
+  <div class="rc-product-card" data-product="dms">
+    <h3><a href="pages/products/recon-dms">Recon DMS</a></h3>
+    <p>Capture, classify, and search enterprise documents with Salesforce-first experience powered by AWS Textract.</p>
     <ul>
       <li><a href="pages/products/recon-dms">Deployment Overview</a></li>
-      <li><a href="pages/products/recon-dms/aws/">AWS Deployment Overview</a></li>
-      <li><a href="pages/products/recon-dms/azure-sharepoint">Azure &amp; SharePoint Setup</a></li>
+      <li><a href="pages/products/recon-dms/aws/">AWS Deployment</a></li>
+      <li><a href="pages/products/recon-dms/azure-sharepoint">Azure &amp; SharePoint</a></li>
       <li><a href="pages/products/recon-dms/salesforce-installation">Salesforce Configuration</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="product-card">
-    <h2><a class="product-card-link" href="pages/products/recon-audit-trail">Recon Audit Trail</a></h2>
-    <p>Native Salesforce solution that captures high-volume field history, automates backups, and keeps audits searchable for compliance teams.</p>
+  <div class="rc-product-card" data-product="audit">
+    <h3><a href="pages/products/recon-audit-trail">Recon Audit Trail</a></h3>
+    <p>Native Salesforce solution capturing high-volume field history with automated backups and searchable audit records.</p>
     <ul>
       <li><a href="pages/products/recon-audit-trail/overview">Product Overview</a></li>
       <li><a href="pages/products/recon-audit-trail/implementation">Implementation Checklist</a></li>
       <li><a href="pages/products/recon-audit-trail/troubleshooting">Operations &amp; Troubleshooting</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="product-card">
-    <h2><a class="product-card-link" href="pages/products/recon-form-builder">Recon Form Builder</a></h2>
-    <p>Configurable intake builder that lets power users launch interactive forms on Experience Cloud or internal pages and route submissions into Salesforce.</p>
+  <div class="rc-product-card" data-product="forms">
+    <h3><a href="pages/products/recon-form-builder">Recon Form Builder</a></h3>
+    <p>Configurable intake builder for interactive forms on Experience Cloud or internal pages with Salesforce routing.</p>
     <ul>
       <li><a href="pages/products/recon-form-builder/overview">Product Overview</a></li>
       <li><a href="pages/products/recon-form-builder/implementation">Implementation Checklist</a></li>
       <li><a href="pages/products/recon-form-builder/troubleshooting">Operations &amp; Troubleshooting</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="product-card product-upcoming">
-    <h2><a class="product-card-link" href="pages/products/recon-ai">ReconAI</a></h2>
-    <p>Scheduled Release Q2 2026 — schema-aware conversational AI that delivers secure, natural language answers over Salesforce and connected Recon data.</p>
+  <div class="rc-product-card rc-upcoming" data-product="ai">
+    <h3><a href="pages/products/recon-ai">ReconAI</a></h3>
+    <p>Schema-aware conversational AI delivering secure, natural language answers over Salesforce and connected Recon data.</p>
     <ul>
       <li><a href="pages/products/recon-ai/overview">Product Overview</a></li>
     </ul>
-  </section>
+  </div>
 </div>
 
 ---
 
-## Cross-Product Resources
+<h2 class="rc-section-title">Cross-Product Resources</h2>
 
-### Environment & Deployment
-- [Getting Started](pages/getting-started) for prerequisites, install sequence, and first-login tasks
-- [Configuration Guides](pages/configuration/) for environment setup across matters, security, and automations
-- [Activity Rules Automation](pages/activity-rules) for understanding the managed flows and schedule jobs
+<div class="rc-resources">
+  <div class="rc-resource-group">
+    <h3>Environment &amp; Deployment</h3>
+    <ul>
+      <li><a href="pages/getting-started">Getting Started</a></li>
+      <li><a href="pages/configuration/">Configuration Guides</a></li>
+      <li><a href="pages/activity-rules">Activity Rules Automation</a></li>
+    </ul>
+  </div>
 
-### Data Model & Relationships
-- [Platform Architecture](pages/products/architecture) for a high-level diagram of Recon products working together
-- [Object Reference](pages/objects/activity-rule) to browse Salesforce custom objects
-- [Relationship Diagrams](pages/relationships/matter-relationships) for ERDs and integration points
+  <div class="rc-resource-group">
+    <h3>Data Model &amp; Relationships</h3>
+    <ul>
+      <li><a href="pages/products/architecture">Platform Architecture</a></li>
+      <li><a href="pages/objects/activity-rule">Object Reference</a></li>
+      <li><a href="pages/relationships/matter-relationships">Relationship Diagrams</a></li>
+    </ul>
+  </div>
 
-### Operations & Support
-- [Workflow Engine](pages/workflow-engine) for orchestration patterns and maintenance
-- [Contact & User Setup](pages/contact-user-setup) for provisioning administrators and end users
-
----
-
-## Stewardship Checklist
-
-- Confirm each product card links to a live documentation hub before release
-- Keep installation and configuration instructions aligned with the latest managed package version
-- Update relationship diagrams whenever metadata changes are deployed
-- Record support escalation paths in every product section for partner reference
+  <div class="rc-resource-group">
+    <h3>Operations &amp; Support</h3>
+    <ul>
+      <li><a href="pages/workflow-engine">Workflow Engine</a></li>
+      <li><a href="pages/contact-user-setup">Contact &amp; User Setup</a></li>
+      <li><a href="pages/external-intake/">External Intake</a></li>
+    </ul>
+  </div>
+</div>

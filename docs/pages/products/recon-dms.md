@@ -27,6 +27,7 @@ Recon DMS unifies document capture, intelligent search, and compliant storage ac
 - [Salesforce Installation](recon-dms/salesforce-installation)
 - [Salesforce Post-Installation](recon-dms/salesforce-post-install)
 - [User Navigation Guide](recon-dms/user-guide)
+- [DMS Migration](recon-dms/migration) — Bulk file migration from legacy systems
 
 ## Deployment Order
 

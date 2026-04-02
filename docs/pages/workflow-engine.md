@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Workflow System
+nav_order: 8
 ---
 
 # Recon Workflow System Documentation
