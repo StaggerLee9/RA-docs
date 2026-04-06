@@ -37,6 +37,7 @@ The Subpoena object tracks subpoena records within the matter management system.
 
 ### Child Objects
 - Subpoena Contact (Subpoena_Contact__c)
+- Subpoena Note (Subpoena_Note__c)
 - Subpoena Request Information (Subpoena_Request_Information__c)
 
 ## Common Use Cases
@@ -57,3 +58,4 @@ The Subpoena object tracks subpoena records within the matter management system.
    - Create a record for each subpoena received or issued
    - Link all associated contacts via Subpoena Contact records
    - Document requested information via Subpoena Request Information records
+   - Record observations and updates via Subpoena Note records
