@@ -46,6 +46,7 @@ The Claim object stores high-level information about legal or administrative cla
 ### Child Objects
 - Claim Contact (via Claim_Contacts master-detail)
 - Claim Detail (via Claim_Details master-detail)
+- Claim Note (via Claim_Notes master-detail)
 
 ## Common Use Cases
 

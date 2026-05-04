@@ -16,7 +16,7 @@ landing: true
     </div>
   </div>
   <div class="rc-notice">
-    <p><strong>Confidential</strong> This documentation is proprietary and may not be shared without prior written consent. Sharing without consent shall be considered a breach of applicable non-disclosure agreements.</p>
+    <p><strong>Confidential</strong> This documentation is proprietary and may not be shared without prior written consent. "Sharing" includes screenshots, printing, and exporting in whole or in part. Any such disclosure shall be considered a breach of applicable non-disclosure agreements.</p>
   </div>
 </div>
 
