@@ -7,7 +7,6 @@ has_children: true
 nav_order: 4
 nav_scope: recon-dms
 nav_scope_title: Recon DMS
-nav_scope_root: /pages/products/recon-dms/
 ---
 
 # Recon DMS
@@ -22,18 +21,20 @@ Recon DMS unifies document capture, intelligent search, and compliant storage ac
 ## Explore the Documentation
 
 - [Product Overview](recon-dms/overview)
+- [User Navigation Guide](recon-dms/user-guide)
 - [AWS Deployment Overview](recon-dms/aws/)
-- [Azure & SharePoint Setup](recon-dms/azure-sharepoint)
+- [Azure & SharePoint Setup](recon-dms/azure-sharepoint) — Optional inline editing for Office files
 - [Salesforce Installation](recon-dms/salesforce-installation)
 - [Salesforce Post-Installation](recon-dms/salesforce-post-install)
-- [User Navigation Guide](recon-dms/user-guide)
+- [Cloud OCR Inbound Integration](recon-dms/ocr-integration) — Wire Cloud OCR job results back into Recon DMS
 - [DMS Migration](recon-dms/migration) — Bulk file migration from legacy systems
 
 ## Deployment Order
 
 1. **Provision AWS infrastructure** – buckets, Textract, Lambda, APIs, OpenSearch, MongoDB, and supporting services.
-2. **Connect Azure/SharePoint** – register applications, configure permissions, and capture the endpoints needed by Salesforce.
+2. **(Optional) Connect Azure/SharePoint** – register applications, configure permissions, and capture the endpoints needed by Salesforce. Required only if you want inline editing for Office files.
 3. **Configure Salesforce** – install the managed package, enable DMS custom settings, and publish the Lightning components.
+4. **Wire up Cloud OCR** – configure the External Client Application, integration user, and permission set so OCR job results post back into Recon DMS.
 
 ## Success Criteria
 

@@ -8,7 +8,6 @@ nav_order: 2
 has_toc: true
 nav_scope: recon-dms
 nav_scope_title: Recon DMS
-nav_scope_root: /pages/products/recon-dms/
 ---
 
 ReconDMS
@@ -21,10 +20,6 @@ ReconDMS
 > Microsoft 365 and SharePoint administrators who register Azure AD apps, assign permissions, and expose endpoints to Salesforce.
 
 Note: To set up Azure and SharePoint, you need a Microsoft 365 account with the appropriate subscription. The minimum subscription required is Microsoft 365 Basic.
-
-# Table of contents
-
-SharePoint
 
 ## Azure and SharePoint set up user guide
 

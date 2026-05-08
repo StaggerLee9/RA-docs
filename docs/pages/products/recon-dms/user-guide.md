@@ -4,26 +4,16 @@ title: User Navigation Guide
 description: Walkthrough of Recon DMS end-user workflows for uploading, searching, and managing documents.
 grand_parent: Products
 parent: Recon DMS
-nav_order: 5
+nav_order: 1
 has_toc: true
 nav_scope: recon-dms
 nav_scope_title: Recon DMS
-nav_scope_root: /pages/products/recon-dms/
 ---
 
 > **Audience**  
 > Trainers, support teams, and power users who need to understand Recon DMS user-facing experiences.
 
 # User Navigation Guide
-
-## Table of Contents
-
-Upload Folder…4
-
-Browse local file4
-
-Select existing file5
-
 
 ## DMS Navigation Guide
 
