@@ -1,20 +1,21 @@
 ---
 layout: default
-title: Azure & SharePoint Setup
-description: Guide for configuring Azure AD and SharePoint so Recon DMS can access external content.
+title: Azure AD & SharePoint Integration
+description: Optional guide for registering an Azure AD application and granting SharePoint permissions so Recon DMS can support inline Office editing on external content. This page is about identity/integration only — it is not the Azure deployment guide. To host Recon DMS on Azure, see the Azure Deployment Overview.
 grand_parent: Products
 parent: Recon DMS
-nav_order: 2
+nav_order: 3
 has_toc: true
 nav_scope: recon-dms
 nav_scope_title: Recon DMS
 ---
 
-ReconDMS
+# Azure AD & SharePoint Integration
 
-# Azure and SharePoint setup user guide
+(Follow this guide if your organization chooses to use SharePoint for inline Office editing of Recon DMS files.)
 
-(Follow this guide if your organization chooses to use SharePoint)
+> **Note**  
+> This page covers **Azure Active Directory app registration and SharePoint permissions** — an optional integration. To deploy Recon DMS itself onto Azure infrastructure (Container Apps, Cosmos DB, AI Search, Blob, Key Vault), see [Azure Deployment Overview](azure/) instead.
 
 > **Audience**  
 > Microsoft 365 and SharePoint administrators who register Azure AD apps, assign permissions, and expose endpoints to Salesforce.

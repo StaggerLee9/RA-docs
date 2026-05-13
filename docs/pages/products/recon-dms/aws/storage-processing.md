@@ -2,13 +2,13 @@
 layout: default
 title: Storage & Processing Services
 description: Configure S3, Textract, Lambda, and ECR resources for Recon DMS document processing.
+great_grand_parent: Products
 grand_parent: Recon DMS
 parent: AWS Deployment Overview
 nav_order: 1
 has_toc: true
 nav_scope: recon-dms
 nav_scope_title: Recon DMS
-nav_scope_root: /pages/products/recon-dms/
 ---
 
 # Storage & Processing Services

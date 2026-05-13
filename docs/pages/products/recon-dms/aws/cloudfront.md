@@ -2,13 +2,13 @@
 layout: default
 title: CloudFront Distribution (Optional)
 description: Configure Amazon CloudFront for Recon DMS deployments that require CDN delivery in commercial AWS regions.
+great_grand_parent: Products
 grand_parent: Recon DMS
 parent: AWS Deployment Overview
 nav_order: 4
 has_toc: true
 nav_scope: recon-dms
 nav_scope_title: Recon DMS
-nav_scope_root: /pages/products/recon-dms/
 ---
 
 # CloudFront Distribution (Optional)

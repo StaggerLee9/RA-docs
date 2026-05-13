@@ -2,13 +2,13 @@
 layout: default
 title: API & Automation Services
 description: Configure API Gateway, EventBridge schedules, SNS topics, and IAM roles that orchestrate Recon DMS processing.
+great_grand_parent: Products
 grand_parent: Recon DMS
 parent: AWS Deployment Overview
 nav_order: 3
 has_toc: true
 nav_scope: recon-dms
 nav_scope_title: Recon DMS
-nav_scope_root: /pages/products/recon-dms/
 ---
 
 # API & Automation Services

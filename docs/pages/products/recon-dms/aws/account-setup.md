@@ -2,13 +2,13 @@
 layout: default
 title: Account & IAM Foundations
 description: Create the AWS account structure, IAM roles, and workstation prerequisites required for Recon DMS.
+great_grand_parent: Products
 grand_parent: Recon DMS
 parent: AWS Deployment Overview
 nav_order: 0
 has_toc: true
 nav_scope: recon-dms
 nav_scope_title: Recon DMS
-nav_scope_root: /pages/products/recon-dms/
 ---
 
 # Account & IAM Foundations

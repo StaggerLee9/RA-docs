@@ -2,13 +2,13 @@
 layout: default
 title: Resilience & Validation
 description: Configure AWS Backup, create authentication users, and run smoke tests before handing off to Salesforce.
+great_grand_parent: Products
 grand_parent: Recon DMS
 parent: AWS Deployment Overview
 nav_order: 5
 has_toc: true
 nav_scope: recon-dms
 nav_scope_title: Recon DMS
-nav_scope_root: /pages/products/recon-dms/
 ---
 
 # Resilience & Validation

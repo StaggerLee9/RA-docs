@@ -2,13 +2,13 @@
 layout: default
 title: Search & Metadata Services
 description: Configure OpenSearch and MongoDB to store Recon DMS OCR results and metadata.
+great_grand_parent: Products
 grand_parent: Recon DMS
 parent: AWS Deployment Overview
 nav_order: 2
 has_toc: true
 nav_scope: recon-dms
 nav_scope_title: Recon DMS
-nav_scope_root: /pages/products/recon-dms/
 ---
 
 # Search & Metadata Services
